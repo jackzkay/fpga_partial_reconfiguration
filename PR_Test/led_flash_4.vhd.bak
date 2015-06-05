@@ -1,0 +1,36 @@
+entity led_flash is
+    port(
+       clk:in STD_LOGIC;
+       dir: in STD_LOGIC; --global signal
+       leds: out STD_LOGIC_VECTOR (3 downto 0));
+end led_flash;
+
+architecture behv of led_flash is
+
+		constant max_count : natural := 5555555555;
+		signal 
+ 
+begin 
+
+    led : process(refclk, Rst)
+        variable count : natural range 0 to max_count;
+    begin
+        if Rst = '1' then
+            count := 0;
+            led <= '1111';
+        elsif rising_edge(refclk) then
+            if count < max_count/2 then
+                count := count + 1;
+                led <= '1111';
+            elsif count < max_count then
+                led <= '0000';
+                count := count + 1;
+            else
+                led <= '1111';
+                count := 0;
+            end if;
+        end if;
+    end process led; 
+
+end
+	 

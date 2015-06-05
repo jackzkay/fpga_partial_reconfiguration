@@ -1,0 +1,34 @@
+-- Partial Reconfiguration Wrapper in VHDL
+entity persona_1 is
+port( a:in STD_LOGIC_VECTOR (2 downto 0);
+b:in STD_LOGIC_VECTOR (2 downto 0);
+c:in STD_LOGIC_VECTOR (2 downto 0);
+p: out STD_LOGIC_VECTOR (3 downto 0);
+q: out STD_LOGIC_VECTOR (7 downto 0));
+end persona_1;
+architecture synth of persona_1 is
+begin
+process(a,b)
+begin
+p <= a + b;
+end process;
+process (a, b, c, p)
+begin
+q <= (p*a - b*c);
+end process;
+end synth;
+
+entity persona_2 is
+port( a:in STD_LOGIC_VECTOR (2 downto 0);
+b:in STD_LOGIC_VECTOR (2 downto 0);
+c:in STD_LOGIC_VECTOR (2 downto 0); --never used in this persona
+p:out STD_LOGIC_VECTOR (3 downto 0);
+q:out STD_LOGIC_VECTOR (7 downto 0)); --never used in this persona
+end persona_2;
+architecture synth of persona_2 is
+begin
+process(a, b)
+begin
+p <= a *b; --note q is not assigned a value in this persona
+end process;
+end synth;

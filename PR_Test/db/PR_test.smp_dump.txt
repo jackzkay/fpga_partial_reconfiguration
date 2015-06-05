@@ -1,0 +1,23 @@
+
+State Machine - |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|pr_cb_interface:pr_cb_interface_inst|pr_cb_states:pr_cb_states_inst|pr_state
+Name pr_state.PR_REQUEST_DONE pr_state.WAIT_CRC_ERROR_TO_LAST_CLOCK pr_state.WAIT_PR_ERROR_TO_LAST_CLOCK pr_state.WAIT_DONE_TO_LAST_CLOCK pr_state.SEND_PR_DATA pr_state.WAIT_FOR_PR_READY pr_state.IDLE 
+pr_state.IDLE 0 0 0 0 0 0 0 
+pr_state.WAIT_FOR_PR_READY 0 0 0 0 0 1 1 
+pr_state.SEND_PR_DATA 0 0 0 0 1 0 1 
+pr_state.WAIT_DONE_TO_LAST_CLOCK 0 0 0 1 0 0 1 
+pr_state.WAIT_PR_ERROR_TO_LAST_CLOCK 0 0 1 0 0 0 1 
+pr_state.WAIT_CRC_ERROR_TO_LAST_CLOCK 0 1 0 0 0 0 1 
+pr_state.PR_REQUEST_DONE 1 0 0 0 0 0 1 
+
+State Machine - |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|rom_bitstream:rom_bitstream_inst|state
+Name state.SET_BIT_DATA state.WAIT_FOR_READY state.IDLE 
+state.IDLE 0 0 0 
+state.WAIT_FOR_READY 0 1 1 
+state.SET_BIT_DATA 1 0 1 
+
+State Machine - |PR_test_top|pr_user_host:pr_user_host_inst|pr_states:pr_states_inst|test_state
+Name test_state.ERROR_PR test_state.DONE test_state.PR test_state.IDLE 
+test_state.IDLE 0 0 0 0 
+test_state.PR 0 0 1 1 
+test_state.DONE 0 1 0 1 
+test_state.ERROR_PR 1 0 0 1 
