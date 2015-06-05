@@ -1,8 +1,7 @@
 # FPGA Partial Reconfiguration
 
-# Project Information
-* Jakob Klein, Markus Weiss, Johannes Kern
 * Projekt am Institut am Lehrstuhl für Rechnerarchitektur, University of Freiburg
+* Jakob Klein, Markus Weiss, Johannes Kern
 * Quartus II Version 14.1
 * Altera Cyclone V FPGA (5SCEMA5F31C6N)
 
