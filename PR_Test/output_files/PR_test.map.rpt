@@ -1,6 +1,6 @@
 Analysis & Synthesis report for PR_test
-Fri Jun 05 22:52:57 2015
-Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+Mon Jun 08 22:21:45 2015
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
 ---------------------
@@ -37,7 +37,7 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -54,27 +54,27 @@ agreement for further details.
 
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                 ;
-+---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Jun 05 22:52:57 2015      ;
-; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
-; Revision Name                   ; PR_test                                    ;
-; Top-level Entity Name           ; PR_test_top                                ;
-; Family                          ; Cyclone V                                  ;
-; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 84                                         ;
-; Total pins                      ; 57                                         ;
-; Total virtual pins              ; 0                                          ;
-; Total block memory bits         ; 0                                          ;
-; Total DSP Blocks                ; 0                                          ;
-; Total HSSI RX PCSs              ; 0                                          ;
-; Total HSSI PMA RX Deserializers ; 0                                          ;
-; Total HSSI TX PCSs              ; 0                                          ;
-; Total HSSI PMA TX Serializers   ; 0                                          ;
-; Total PLLs                      ; 0                                          ;
-; Total DLLs                      ; 0                                          ;
-+---------------------------------+--------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Jun 08 22:21:45 2015       ;
+; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Full Version ;
+; Revision Name                   ; PR_test                                     ;
+; Top-level Entity Name           ; PR_test_top                                 ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 114                                         ;
+; Total pins                      ; 57                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -84,7 +84,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; PR_test_top        ; PR_test            ;
-; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
@@ -170,7 +170,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -179,42 +179,43 @@ agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processors 2-4         ; < 0.1%      ;
-;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+---------+
-; PR_test_top.vhd                  ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/PR_test_top.vhd                   ;         ;
-; freeze_region.vhd                ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/freeze_region.vhd                 ;         ;
-; led_wrapper_generell.vhd         ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/led_wrapper_generell.vhd          ;         ;
-; led_flash_4.vhd                  ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/led_flash_4.vhd                   ;         ;
-; pr_states.vhd                    ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/pr_states.vhd                     ;         ;
-; pr_engine.vhd                    ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/pr_engine.vhd                     ;         ;
-; pr_cb_interface.vhd              ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/pr_cb_interface.vhd               ;         ;
-; pr_user_host.vhd                 ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/pr_user_host.vhd                  ;         ;
-; pr_cb_states.vhd                 ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/pr_cb_states.vhd                  ;         ;
-; rom_bitstream.vhd                ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/rom_bitstream.vhd                 ;         ;
-; persona1_rom_pr.vhd              ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/persona1_rom_pr.vhd               ;         ;
-; persona2_rom_pr.vhd              ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/persona2_rom_pr.vhd               ;         ;
-; ticker.vhd                       ; yes             ; User VHDL File                         ; D:/altera/workspace/PR_test_backup/ticker.vhd                        ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; d:/altera/14.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; d:/altera/14.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; d:/altera/14.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; d:/altera/14.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal141.inc                   ; yes             ; Megafunction                           ; d:/altera/14.1/quartus/libraries/megafunctions/aglobal141.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; d:/altera/14.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; d:/altera/14.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; d:/altera/14.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; d:/altera/14.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_75k1.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/altera/workspace/PR_test_backup/db/altsyncram_75k1.tdf            ;         ;
-; persona1_rom_pr.mif              ; yes             ; Auto-Found Memory Initialization File  ; D:/altera/workspace/PR_test_backup/persona1_rom_pr.mif               ;         ;
-; db/decode_q2a.tdf                ; yes             ; Auto-Generated Megafunction            ; D:/altera/workspace/PR_test_backup/db/decode_q2a.tdf                 ;         ;
-; db/mux_0jb.tdf                   ; yes             ; Auto-Generated Megafunction            ; D:/altera/workspace/PR_test_backup/db/mux_0jb.tdf                    ;         ;
-+----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                           ;
++----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------+---------+
+; ticker_disp.vhd                  ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/ticker_disp.vhd          ;         ;
+; PR_test_top.vhd                  ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/PR_test_top.vhd          ;         ;
+; freeze_region.vhd                ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/freeze_region.vhd        ;         ;
+; led_wrapper_generell.vhd         ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/led_wrapper_generell.vhd ;         ;
+; led_flash_4.vhd                  ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/led_flash_4.vhd          ;         ;
+; pr_states.vhd                    ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/pr_states.vhd            ;         ;
+; pr_engine.vhd                    ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/pr_engine.vhd            ;         ;
+; pr_cb_interface.vhd              ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/pr_cb_interface.vhd      ;         ;
+; pr_user_host.vhd                 ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/pr_user_host.vhd         ;         ;
+; pr_cb_states.vhd                 ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/pr_cb_states.vhd         ;         ;
+; rom_bitstream.vhd                ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/rom_bitstream.vhd        ;         ;
+; persona1_rom_pr.vhd              ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/persona1_rom_pr.vhd      ;         ;
+; persona2_rom_pr.vhd              ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/persona2_rom_pr.vhd      ;         ;
+; led_wrapper_2.vhd                ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/led_wrapper_2.vhd        ;         ;
+; led_flash_2.vhd                  ; yes             ; User VHDL File                         ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/led_flash_2.vhd          ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; f:/quartus/quartus/libraries/megafunctions/altsyncram.tdf                ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; f:/quartus/quartus/libraries/megafunctions/stratix_ram_block.inc         ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; f:/quartus/quartus/libraries/megafunctions/lpm_mux.inc                   ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; f:/quartus/quartus/libraries/megafunctions/lpm_decode.inc                ;         ;
+; aglobal150.inc                   ; yes             ; Megafunction                           ; f:/quartus/quartus/libraries/megafunctions/aglobal150.inc                ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; f:/quartus/quartus/libraries/megafunctions/a_rdenreg.inc                 ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; f:/quartus/quartus/libraries/megafunctions/altrom.inc                    ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; f:/quartus/quartus/libraries/megafunctions/altram.inc                    ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; f:/quartus/quartus/libraries/megafunctions/altdpram.inc                  ;         ;
+; db/altsyncram_75k1.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/db/altsyncram_75k1.tdf   ;         ;
+; persona1_rom_pr.mif              ; yes             ; Auto-Found Memory Initialization File  ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/persona1_rom_pr.mif      ;         ;
+; db/decode_q2a.tdf                ; yes             ; Auto-Generated Megafunction            ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/db/decode_q2a.tdf        ;         ;
+; db/mux_0jb.tdf                   ; yes             ; Auto-Generated Megafunction            ; F:/Quartus/workspace/PR_test-2015-06-08/PR_test/db/mux_0jb.tdf           ;         ;
++----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------+
@@ -222,39 +223,41 @@ agreement for further details.
 +---------------------------------------------+--------------------+
 ; Resource                                    ; Usage              ;
 +---------------------------------------------+--------------------+
-; Estimate of Logic utilization (ALMs needed) ; 158                ;
+; Estimate of Logic utilization (ALMs needed) ; 216                ;
 ;                                             ;                    ;
-; Combinational ALUT usage for logic          ; 228                ;
+; Combinational ALUT usage for logic          ; 313                ;
 ;     -- 7 input functions                    ; 0                  ;
-;     -- 6 input functions                    ; 86                 ;
-;     -- 5 input functions                    ; 35                 ;
-;     -- 4 input functions                    ; 23                 ;
-;     -- <=3 input functions                  ; 84                 ;
+;     -- 6 input functions                    ; 118                ;
+;     -- 5 input functions                    ; 39                 ;
+;     -- 4 input functions                    ; 32                 ;
+;     -- <=3 input functions                  ; 124                ;
 ;                                             ;                    ;
-; Dedicated logic registers                   ; 84                 ;
+; Dedicated logic registers                   ; 114                ;
 ;                                             ;                    ;
 ; I/O pins                                    ; 57                 ;
 ;                                             ;                    ;
 ; Total DSP Blocks                            ; 0                  ;
 ;                                             ;                    ;
 ; Maximum fan-out node                        ; system_clock~input ;
-; Maximum fan-out                             ; 84                 ;
-; Total fan-out                               ; 1302               ;
-; Average fan-out                             ; 3.06               ;
+; Maximum fan-out                             ; 114                ;
+; Total fan-out                               ; 1725               ;
+; Average fan-out                             ; 3.19               ;
 +---------------------------------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                  ;
-+---------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node            ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                 ; Library Name ;
-+---------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------+
-; |PR_test_top                          ; 228 (2)           ; 84 (0)       ; 0                 ; 0          ; 57   ; 0            ; |PR_test_top                                                                                        ; work         ;
-;    |freeze_region:freeze_region_inst| ; 38 (0)            ; 31 (1)       ; 0                 ; 0          ; 0    ; 0            ; |PR_test_top|freeze_region:freeze_region_inst                                                       ; work         ;
-;       |led_wrapper:led_wrapper_inst|  ; 38 (0)            ; 30 (0)       ; 0                 ; 0          ; 0    ; 0            ; |PR_test_top|freeze_region:freeze_region_inst|led_wrapper:led_wrapper_inst                          ; work         ;
-;          |led_flash:led_flash_inst|   ; 38 (38)           ; 30 (30)      ; 0                 ; 0          ; 0    ; 0            ; |PR_test_top|freeze_region:freeze_region_inst|led_wrapper:led_wrapper_inst|led_flash:led_flash_inst ; work         ;
-;    |ticker_disp:ticker_inst|          ; 188 (188)         ; 53 (53)      ; 0                 ; 0          ; 0    ; 0            ; |PR_test_top|ticker_disp:ticker_inst                                                                ; work         ;
-+---------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
++------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Library Name ;
++------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+; |PR_test_top                             ; 313 (4)           ; 114 (0)      ; 0                 ; 0          ; 57   ; 0            ; |PR_test_top                                                                                                ; work         ;
+;    |freeze_region:freeze_region_inst|    ; 121 (0)           ; 61 (1)       ; 0                 ; 0          ; 0    ; 0            ; |PR_test_top|freeze_region:freeze_region_inst                                                               ; work         ;
+;       |led_wrapper:led_wrapper_inst|     ; 34 (0)            ; 30 (0)       ; 0                 ; 0          ; 0    ; 0            ; |PR_test_top|freeze_region:freeze_region_inst|led_wrapper:led_wrapper_inst                                  ; work         ;
+;          |led_flash:led_flash_inst|      ; 34 (34)           ; 30 (30)      ; 0                 ; 0          ; 0    ; 0            ; |PR_test_top|freeze_region:freeze_region_inst|led_wrapper:led_wrapper_inst|led_flash:led_flash_inst         ; work         ;
+;       |led_wrapper_2:led_wrapper_inst_2| ; 87 (0)            ; 30 (0)       ; 0                 ; 0          ; 0    ; 0            ; |PR_test_top|freeze_region:freeze_region_inst|led_wrapper_2:led_wrapper_inst_2                              ; work         ;
+;          |led_flash_2:led_flash_inst_2|  ; 87 (87)           ; 30 (30)      ; 0                 ; 0          ; 0    ; 0            ; |PR_test_top|freeze_region:freeze_region_inst|led_wrapper_2:led_wrapper_inst_2|led_flash_2:led_flash_inst_2 ; work         ;
+;    |ticker_disp:ticker_inst|             ; 188 (188)         ; 53 (53)      ; 0                 ; 0          ; 0    ; 0            ; |PR_test_top|ticker_disp:ticker_inst                                                                        ; work         ;
++------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -413,8 +416,8 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 84    ;
-; Number of registers using Synchronous Clear  ; 63    ;
+; Total registers                              ; 114   ;
+; Number of registers using Synchronous Clear  ; 89    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -423,24 +426,26 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 30 bits   ; 60 LEs        ; 0 LEs                ; 60 LEs                 ; Yes        ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|pr_cb_interface:pr_cb_interface_inst|pr_cb_states:pr_cb_states_inst|cnt_done_to_last_clock[23]                                                                         ;
-; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |PR_test_top|freeze_region:freeze_region_inst|led_wrapper:led_wrapper_inst|led_flash:led_flash_inst|\led:count[4]                                                                                                                           ;
-; 6:1                ; 20 bits   ; 80 LEs        ; 0 LEs                ; 80 LEs                 ; Yes        ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|rom_bitstream:rom_bitstream_inst|address[12]                                                                                                                           ;
-; 8:1                ; 17 bits   ; 85 LEs        ; 68 LEs               ; 17 LEs                 ; Yes        ; |PR_test_top|ticker_disp:ticker_inst|disp_hex0[0]                                                                                                                                                                                           ;
-; 8:1                ; 29 bits   ; 145 LEs       ; 0 LEs                ; 145 LEs                ; Yes        ; |PR_test_top|ticker_disp:ticker_inst|count[4]                                                                                                                                                                                               ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |PR_test_top|ticker_disp:ticker_inst|disp_hex3[2]                                                                                                                                                                                           ;
-; 130:1              ; 16 bits   ; 1376 LEs      ; 1376 LEs             ; 0 LEs                  ; Yes        ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|rom_bitstream:rom_bitstream_inst|bit_data[7]                                                                                                                           ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 0 LEs                ; 4 LEs                  ; Yes        ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|pr_cb_interface:pr_cb_interface_inst|pr_cb_states:pr_cb_states_inst|cnt_done_to_last_clock[31]                                                                         ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_states:pr_states_inst|test_state                                                                                                                                                             ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|rom_bitstream:rom_bitstream_inst|Selector2                                                                                                                             ;
-; 16:1               ; 32 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|rom_bitstream:rom_bitstream_inst|persona2_rom_pr:persona2_rom_pr_inst|altsyncram:altsyncram_component|altsyncram_75k1:auto_generated|mux_0jb:mux2|l4_w1_n4_mux_dataout ;
-; 15:1               ; 7 bits    ; 70 LEs        ; 35 LEs               ; 35 LEs                 ; No         ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|pr_cb_interface:pr_cb_interface_inst|pr_cb_states:pr_cb_states_inst|Selector0                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 30 bits   ; 60 LEs        ; 0 LEs                ; 60 LEs                 ; Yes        ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|pr_cb_interface:pr_cb_interface_inst|pr_cb_states:pr_cb_states_inst|cnt_done_to_last_clock[17]                                                                          ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |PR_test_top|freeze_region:freeze_region_inst|led_wrapper_2:led_wrapper_inst_2|led_flash_2:led_flash_inst_2|second_leds[2]                                                                                                                   ;
+; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |PR_test_top|freeze_region:freeze_region_inst|led_wrapper:led_wrapper_inst|led_flash:led_flash_inst|\led:count[23]                                                                                                                           ;
+; 5:1                ; 26 bits   ; 78 LEs        ; 0 LEs                ; 78 LEs                 ; Yes        ; |PR_test_top|freeze_region:freeze_region_inst|led_wrapper_2:led_wrapper_inst_2|led_flash_2:led_flash_inst_2|\led_flash_2:count[1]                                                                                                            ;
+; 6:1                ; 20 bits   ; 80 LEs        ; 0 LEs                ; 80 LEs                 ; Yes        ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|rom_bitstream:rom_bitstream_inst|address[13]                                                                                                                            ;
+; 8:1                ; 17 bits   ; 85 LEs        ; 68 LEs               ; 17 LEs                 ; Yes        ; |PR_test_top|ticker_disp:ticker_inst|disp_hex1[6]                                                                                                                                                                                            ;
+; 8:1                ; 29 bits   ; 145 LEs       ; 0 LEs                ; 145 LEs                ; Yes        ; |PR_test_top|ticker_disp:ticker_inst|count[25]                                                                                                                                                                                               ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |PR_test_top|ticker_disp:ticker_inst|disp_hex3[2]                                                                                                                                                                                            ;
+; 130:1              ; 16 bits   ; 1376 LEs      ; 1376 LEs             ; 0 LEs                  ; Yes        ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|rom_bitstream:rom_bitstream_inst|bit_data[3]                                                                                                                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 0 LEs                ; 4 LEs                  ; Yes        ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|pr_cb_interface:pr_cb_interface_inst|pr_cb_states:pr_cb_states_inst|cnt_done_to_last_clock[0]                                                                           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_states:pr_states_inst|test_state                                                                                                                                                              ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|rom_bitstream:rom_bitstream_inst|Selector0                                                                                                                              ;
+; 16:1               ; 32 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|rom_bitstream:rom_bitstream_inst|persona2_rom_pr:persona2_rom_pr_inst|altsyncram:altsyncram_component|altsyncram_75k1:auto_generated|mux_0jb:mux2|l4_w13_n4_mux_dataout ;
+; 15:1               ; 7 bits    ; 70 LEs        ; 35 LEs               ; 35 LEs                 ; No         ; |PR_test_top|pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|pr_cb_interface:pr_cb_interface_inst|pr_cb_states:pr_cb_states_inst|Selector1                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -647,25 +652,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 84                          ;
+; arriav_ff             ; 114                         ;
 ;     ENA               ; 16                          ;
 ;     ENA SCLR          ; 8                           ;
-;     SCLR              ; 55                          ;
-;     plain             ; 5                           ;
-; arriav_lcell_comb     ; 230                         ;
-;     arith             ; 55                          ;
-;         1 data inputs ; 55                          ;
-;     normal            ; 175                         ;
-;         0 data inputs ; 2                           ;
-;         2 data inputs ; 15                          ;
-;         3 data inputs ; 14                          ;
-;         4 data inputs ; 23                          ;
-;         5 data inputs ; 35                          ;
-;         6 data inputs ; 86                          ;
+;     SCLR              ; 81                          ;
+;     plain             ; 9                           ;
+; arriav_lcell_comb     ; 314                         ;
+;     arith             ; 81                          ;
+;         1 data inputs ; 81                          ;
+;     normal            ; 233                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 23                          ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 32                          ;
+;         5 data inputs ; 39                          ;
+;         6 data inputs ; 118                         ;
 ; boundary_port         ; 57                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.50                        ;
-; Average LUT depth     ; 5.51                        ;
+; Average LUT depth     ; 5.61                        ;
 +-----------------------+-----------------------------+
 
 
@@ -674,7 +679,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -683,10 +688,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Fri Jun 05 22:52:28 2015
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Full Version
+    Info: Processing started: Mon Jun 08 22:21:29 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PR_test -c PR_test
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file ticker_disp.vhd
+    Info (12022): Found design unit 1: ticker_disp-behavior
+    Info (12023): Found entity 1: ticker_disp
 Info (12021): Found 2 design units, including 1 entities, in source file pr_test_top.vhd
     Info (12022): Found design unit 1: PR_test_top-behv
     Info (12023): Found entity 1: PR_test_top
@@ -694,7 +702,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file freeze_
     Info (12022): Found design unit 1: freeze_region-behv
     Info (12023): Found entity 1: freeze_region
 Info (12021): Found 0 design units, including 0 entities, in source file led_wrapper.vhd
-Warning (12019): Can't analyze file -- file led_flash.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file led_wrapper_generell.vhd
     Info (12022): Found design unit 1: led_wrapper-behv
     Info (12023): Found entity 1: led_wrapper
@@ -725,16 +732,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file persona
 Info (12021): Found 2 design units, including 1 entities, in source file persona2_rom_pr.vhd
     Info (12022): Found design unit 1: persona2_rom_pr-behv
     Info (12023): Found entity 1: persona2_rom_pr
-Info (12021): Found 2 design units, including 1 entities, in source file ticker.vhd
-    Info (12022): Found design unit 1: ticker_disp-behavior
-    Info (12023): Found entity 1: ticker_disp
+Info (12021): Found 2 design units, including 1 entities, in source file led_wrapper_2.vhd
+    Info (12022): Found design unit 1: led_wrapper_2-behv
+    Info (12023): Found entity 1: led_wrapper_2
+Info (12021): Found 2 design units, including 1 entities, in source file led_flash_2.vhd
+    Info (12022): Found design unit 1: led_flash_2-behv
+    Info (12023): Found entity 1: led_flash_2
 Info (12127): Elaborating entity "PR_test_top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at PR_test_top.vhd(78): object "pr_freeze_reg1" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at PR_test_top.vhd(79): object "really_done" assigned a value but never read
-Warning (10873): Using initial value X (don't care) for net "LED[3..0]" at PR_test_top.vhd(23)
+Warning (10036): Verilog HDL or VHDL warning at PR_test_top.vhd(81): object "pr_freeze_reg1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at PR_test_top.vhd(82): object "really_done" assigned a value but never read
 Info (12128): Elaborating entity "freeze_region" for hierarchy "freeze_region:freeze_region_inst"
 Info (12128): Elaborating entity "led_wrapper" for hierarchy "freeze_region:freeze_region_inst|led_wrapper:led_wrapper_inst"
 Info (12128): Elaborating entity "led_flash" for hierarchy "freeze_region:freeze_region_inst|led_wrapper:led_wrapper_inst|led_flash:led_flash_inst"
+Info (12128): Elaborating entity "led_wrapper_2" for hierarchy "freeze_region:freeze_region_inst|led_wrapper_2:led_wrapper_inst_2"
+Info (12128): Elaborating entity "led_flash_2" for hierarchy "freeze_region:freeze_region_inst|led_wrapper_2:led_wrapper_inst_2|led_flash_2:led_flash_inst_2"
 Info (12128): Elaborating entity "pr_user_host" for hierarchy "pr_user_host:pr_user_host_inst"
 Info (12128): Elaborating entity "pr_states" for hierarchy "pr_user_host:pr_user_host_inst|pr_states:pr_states_inst"
 Info (12128): Elaborating entity "pr_engine" for hierarchy "pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst"
@@ -775,7 +786,7 @@ Warning (10036): Verilog HDL or VHDL warning at pr_cb_interface.vhd(53): object 
 Info (12128): Elaborating entity "pr_cb_states" for hierarchy "pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|pr_cb_interface:pr_cb_interface_inst|pr_cb_states:pr_cb_states_inst"
 Warning (10541): VHDL Signal Declaration warning at pr_cb_states.vhd(15): used implicit default value for signal "really_done" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "ticker_disp" for hierarchy "ticker_disp:ticker_inst"
-Warning (10540): VHDL Signal Declaration warning at ticker.vhd(21): used explicit default value for signal "max_count" because signal was never assigned a value
+Warning (10540): VHDL Signal Declaration warning at ticker_disp.vhd(18): used explicit default value for signal "max_count" because signal was never assigned a value
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "pr_user_host:pr_user_host_inst|pr_engine:pr_engine_inst|rom_bitstream:rom_bitstream_inst|persona2_rom_pr:persona2_rom_pr_inst|altsyncram:altsyncram_component|altsyncram_75k1:auto_generated|ram_block1a0"
@@ -3341,10 +3352,6 @@ Warning (14284): Synthesized away the following node(s):
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "PR_done_led" is stuck at VCC
     Warning (13410): Pin "PR_error_led" is stuck at VCC
-    Warning (13410): Pin "LED[0]" is stuck at GND
-    Warning (13410): Pin "LED[1]" is stuck at GND
-    Warning (13410): Pin "LED[2]" is stuck at GND
-    Warning (13410): Pin "LED[3]" is stuck at GND
     Warning (13410): Pin "disp_hex0[0]" is stuck at VCC
     Warning (13410): Pin "disp_hex0[1]" is stuck at VCC
     Warning (13410): Pin "disp_hex0[5]" is stuck at VCC
@@ -3371,14 +3378,14 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "PR_reset_button"
     Warning (15610): No output dependent on input pin "PR1_button"
     Warning (15610): No output dependent on input pin "dir_switch_1"
-Info (21057): Implemented 325 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 436 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 268 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2598 warnings
-    Info: Peak virtual memory: 838 megabytes
-    Info: Processing ended: Fri Jun 05 22:52:58 2015
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:36
+    Info (21061): Implemented 379 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2592 warnings
+    Info: Peak virtual memory: 898 megabytes
+    Info: Processing ended: Mon Jun 08 22:21:45 2015
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:26
 
 

@@ -1,0 +1,16 @@
+﻿Die Rekonfigurierung über den internal host wäre genau das, was ich gerne hätte. D.h. es sollte möglich sein, ein C/C++ Programm auf dem Hard Processor auszuführen, welches dann die PR übernimmt.
+------------------------------------------------------------------------
+
+﻿- LED Blinkmuster mit 4 LEDs erstellen (direkt unter dem toplevelmodul). Dieses beweist, das der Teil der nicht rekonfiguriert wird einfach weiter läuft
+
+
+- Einen zweiten wrapper unter der freeezeregion zu erstellen + eine weitere LED_flash entity, die 3 LEDs in irgendeiner weise blinken lässt.
+
+
+- Die demo durchmachen und die LogicLock regions bestimmen + erzeugung der ganzen Files
+
+
+- Durchsehen aller Warnings, ob irgendwelche wichtigen Signale nicht verbunden sind
+
+
+- Verbinden von IO signalen wie clkc reset und LEDs mit den dazugehörigen PINS

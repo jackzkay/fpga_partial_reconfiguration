@@ -1,0 +1,80 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity ticker is
+port (
+      clk : in std_logic;
+        
+        disp_hex0 : out std_logic_vector(6 downto 0);  -- 7 bit decoded output.
+		  disp_hex1 : out std_logic_vector(6 downto 0);  -- 7 bit decoded output.
+		  disp_hex2 : out std_logic_vector(6 downto 0);  -- 7 bit decoded output.
+		  disp_hex3 : out std_logic_vector(6 downto 0);  -- 7 bit decoded output.
+		  disp_hex4 : out std_logic_vector(6 downto 0);  -- 7 bit decoded output.
+		  disp_hex5 : out std_logic_vector(6 downto 0)   -- 7 bit decoded output.
+    );
+end ticker;
+--'a' corresponds to MSB of segment7 and g corresponds to LSB of segment7.
+architecture Behavioral of ticker is
+
+constant max_count : natural := 300000000;
+
+begin
+process (clk)
+variable count : natural range 0 to max_count;
+BEGIN
+--if (clk'event and clk='1') then
+
+if count < 50000000 then
+		disp_hex5 <="0000000";  -- 'r'
+		disp_hex4 <="1111111";  -- 'u'
+		disp_hex3 <="1111111";  -- 'n'
+		disp_hex2 <="1111111"; 
+		disp_hex1 <="1111111"; 
+		disp_hex0 <="1111111";  
+		count := count + 1;		
+elsif (count > 50000000 and count < 100000000) then
+      disp_hex4 <="0000000";  -- 'r'
+		disp_hex3 <="1111111";  -- 'u'
+		disp_hex2 <="1111111";  -- 'n'
+		disp_hex1 <="1111111"; 
+		disp_hex0 <="1111111"; 
+		disp_hex5 <="1111111";  
+		count := count +1;
+elsif (count > 100000000 and count < 150000000) then
+      disp_hex3 <="0000000";  -- 'r'
+		disp_hex2 <="1111111";  -- 'u'
+		disp_hex1 <="1111111";  -- 'n'
+		disp_hex0 <="1111111"; 
+		disp_hex5 <="1111111"; 
+		disp_hex4 <="1111111";  
+		count := count + 1;
+elsif (count > 150000000 and count < 200000000) then
+      disp_hex2 <="0000000";  -- 'r'
+		disp_hex1 <="1111111";  -- 'u'
+		disp_hex0 <="1111111";  -- 'n'
+		disp_hex5 <="1111111"; 
+		disp_hex4 <="1111111"; 
+		disp_hex3 <="1111111";  
+		count := count + 1;
+elsif (count > 200000000 and count < 250000000) then
+      disp_hex1 <="0000000";  -- 'r'
+		disp_hex0 <="1111111";  -- 'u'
+		disp_hex5 <="1111111";  -- 'n'
+		disp_hex4 <="1111111"; 
+		disp_hex3 <="1111111"; 
+		disp_hex2 <="1111111";  
+		count := count + 1;
+elsif count > 250000000 then
+      disp_hex0 <="0000000";  -- 'r'
+		disp_hex5 <="1111111";  -- 'u'
+		disp_hex4 <="1111111";  -- 'n' 
+		disp_hex3 <="1111111"; 
+		disp_hex2 <="1111111"; 
+		disp_hex1 <="1111111";  
+		count := 0;
+		end if;
+	--end if;
+end process;
+
+end Behavioral;

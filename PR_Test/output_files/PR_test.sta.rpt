@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for PR_test
-Fri Jun 05 22:54:50 2015
-Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+Mon Jun 08 22:22:46 2015
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  13. Hold Times
  14. Clock to Output Times
  15. Minimum Clock to Output Times
- 16. Slow 1100mV 85C Model Metastability Report
+ 16. Slow 1100mV 85C Model Metastability Summary
  17. Slow 1100mV 0C Model Fmax Summary
  18. Slow 1100mV 0C Model Setup Summary
  19. Slow 1100mV 0C Model Hold Summary
@@ -32,7 +32,7 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  24. Hold Times
  25. Clock to Output Times
  26. Minimum Clock to Output Times
- 27. Slow 1100mV 0C Model Metastability Report
+ 27. Slow 1100mV 0C Model Metastability Summary
  28. Fast 1100mV 85C Model Setup Summary
  29. Fast 1100mV 85C Model Hold Summary
  30. Fast 1100mV 85C Model Recovery Summary
@@ -42,7 +42,7 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  34. Hold Times
  35. Clock to Output Times
  36. Minimum Clock to Output Times
- 37. Fast 1100mV 85C Model Metastability Report
+ 37. Fast 1100mV 85C Model Metastability Summary
  38. Fast 1100mV 0C Model Setup Summary
  39. Fast 1100mV 0C Model Hold Summary
  40. Fast 1100mV 0C Model Recovery Summary
@@ -52,7 +52,7 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  44. Hold Times
  45. Clock to Output Times
  46. Minimum Clock to Output Times
- 47. Fast 1100mV 0C Model Metastability Report
+ 47. Fast 1100mV 0C Model Metastability Summary
  48. Multicorner Timing Analysis Summary
  49. Setup Times
  50. Hold Times
@@ -76,7 +76,7 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -93,17 +93,17 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------+
-; TimeQuest Timing Analyzer Summary                                       ;
-+--------------------+----------------------------------------------------+
-; Quartus II Version ; Version 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
-; Revision Name      ; PR_test                                            ;
-; Device Family      ; Cyclone V                                          ;
-; Device Name        ; 5CSEMA5F31C6                                       ;
-; Timing Models      ; Final                                              ;
-; Delay Model        ; Combined                                           ;
-; Rise/Fall Delays   ; Enabled                                            ;
-+--------------------+----------------------------------------------------+
++--------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                        ;
++--------------------+-----------------------------------------------------+
+; Quartus II Version ; Version 15.0.0 Build 145 04/22/2015 SJ Full Version ;
+; Revision Name      ; PR_test                                             ;
+; Device Family      ; Cyclone V                                           ;
+; Device Name        ; 5CSEMA5F31C6                                        ;
+; Timing Models      ; Final                                               ;
+; Delay Model        ; Combined                                            ;
+; Rise/Fall Delays   ; Enabled                                             ;
++--------------------+-----------------------------------------------------+
 
 
 +------------------------------------------+
@@ -111,7 +111,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -120,7 +120,6 @@ agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processors 2-4         ; < 0.1%      ;
-;     Processors 5-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -138,7 +137,7 @@ agreement for further details.
 +------------+-----------------+--------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name   ; Note ;
 +------------+-----------------+--------------+------+
-; 140.35 MHz ; 140.35 MHz      ; system_clock ;      ;
+; 132.96 MHz ; 132.96 MHz      ; system_clock ;      ;
 +------------+-----------------+--------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -154,7 +153,7 @@ HTML report is unavailable in plain text report export.
 +--------------+--------+---------------+
 ; Clock        ; Slack  ; End Point TNS ;
 +--------------+--------+---------------+
-; system_clock ; -6.125 ; -395.085      ;
+; system_clock ; -6.521 ; -595.046      ;
 +--------------+--------+---------------+
 
 
@@ -163,7 +162,7 @@ HTML report is unavailable in plain text report export.
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; system_clock ; 0.313 ; 0.000         ;
+; system_clock ; 0.453 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -184,7 +183,7 @@ No paths to report.
 +--------------+--------+---------------------------+
 ; Clock        ; Slack  ; End Point TNS             ;
 +--------------+--------+---------------------------+
-; system_clock ; -0.394 ; -43.836                   ;
+; system_clock ; -0.394 ; -59.421                   ;
 +--------------+--------+---------------------------+
 
 
@@ -193,17 +192,17 @@ No paths to report.
 +--------------+--------------+-------+-------+------------+-----------------+
 ; Data Port    ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +--------------+--------------+-------+-------+------------+-----------------+
-; dir_switch_2 ; system_clock ; 1.106 ; 1.481 ; Rise       ; system_clock    ;
+; dir_switch_2 ; system_clock ; 0.979 ; 1.204 ; Rise       ; system_clock    ;
 +--------------+--------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Hold Times                                                                   ;
-+--------------+--------------+--------+--------+------------+-----------------+
-; Data Port    ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+--------------+--------------+--------+--------+------------+-----------------+
-; dir_switch_2 ; system_clock ; -0.001 ; -0.286 ; Rise       ; system_clock    ;
-+--------------+--------------+--------+--------+------------+-----------------+
++-----------------------------------------------------------------------------+
+; Hold Times                                                                  ;
++--------------+--------------+-------+--------+------------+-----------------+
+; Data Port    ; Clock Port   ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+--------------+-------+--------+------------+-----------------+
+; dir_switch_2 ; system_clock ; 0.071 ; -0.128 ; Rise       ; system_clock    ;
++--------------+--------------+-------+--------+------------+-----------------+
 
 
 +-----------------------------------------------------------------------------+
@@ -211,41 +210,45 @@ No paths to report.
 +---------------+--------------+-------+-------+------------+-----------------+
 ; Data Port     ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +---------------+--------------+-------+-------+------------+-----------------+
-; LED[*]        ; system_clock ; 9.345 ; 9.421 ; Rise       ; system_clock    ;
-;  LED[4]       ; system_clock ; 8.127 ; 8.371 ; Rise       ; system_clock    ;
-;  LED[5]       ; system_clock ; 9.345 ; 9.421 ; Rise       ; system_clock    ;
-;  LED[6]       ; system_clock ; 9.090 ; 9.173 ; Rise       ; system_clock    ;
-;  LED[7]       ; system_clock ; 9.203 ; 9.376 ; Rise       ; system_clock    ;
-; disp_hex0[*]  ; system_clock ; 8.167 ; 8.442 ; Rise       ; system_clock    ;
-;  disp_hex0[2] ; system_clock ; 7.578 ; 7.700 ; Rise       ; system_clock    ;
-;  disp_hex0[3] ; system_clock ; 8.167 ; 8.442 ; Rise       ; system_clock    ;
-;  disp_hex0[4] ; system_clock ; 7.496 ; 7.523 ; Rise       ; system_clock    ;
-;  disp_hex0[6] ; system_clock ; 8.110 ; 8.440 ; Rise       ; system_clock    ;
-; disp_hex1[*]  ; system_clock ; 7.791 ; 8.009 ; Rise       ; system_clock    ;
-;  disp_hex1[2] ; system_clock ; 7.791 ; 8.009 ; Rise       ; system_clock    ;
-;  disp_hex1[3] ; system_clock ; 7.772 ; 7.938 ; Rise       ; system_clock    ;
-;  disp_hex1[4] ; system_clock ; 7.683 ; 7.795 ; Rise       ; system_clock    ;
-;  disp_hex1[6] ; system_clock ; 7.636 ; 7.758 ; Rise       ; system_clock    ;
-; disp_hex2[*]  ; system_clock ; 8.391 ; 8.829 ; Rise       ; system_clock    ;
-;  disp_hex2[2] ; system_clock ; 8.181 ; 8.535 ; Rise       ; system_clock    ;
-;  disp_hex2[3] ; system_clock ; 8.070 ; 8.391 ; Rise       ; system_clock    ;
-;  disp_hex2[4] ; system_clock ; 8.391 ; 8.829 ; Rise       ; system_clock    ;
-;  disp_hex2[6] ; system_clock ; 7.944 ; 8.108 ; Rise       ; system_clock    ;
-; disp_hex3[*]  ; system_clock ; 8.038 ; 8.319 ; Rise       ; system_clock    ;
-;  disp_hex3[2] ; system_clock ; 7.784 ; 8.022 ; Rise       ; system_clock    ;
-;  disp_hex3[3] ; system_clock ; 7.779 ; 8.015 ; Rise       ; system_clock    ;
-;  disp_hex3[4] ; system_clock ; 8.038 ; 8.319 ; Rise       ; system_clock    ;
-;  disp_hex3[6] ; system_clock ; 7.354 ; 7.443 ; Rise       ; system_clock    ;
-; disp_hex4[*]  ; system_clock ; 7.913 ; 8.187 ; Rise       ; system_clock    ;
-;  disp_hex4[2] ; system_clock ; 7.287 ; 7.305 ; Rise       ; system_clock    ;
-;  disp_hex4[3] ; system_clock ; 7.913 ; 8.187 ; Rise       ; system_clock    ;
-;  disp_hex4[4] ; system_clock ; 7.654 ; 7.816 ; Rise       ; system_clock    ;
-;  disp_hex4[6] ; system_clock ; 7.755 ; 7.943 ; Rise       ; system_clock    ;
-; disp_hex5[*]  ; system_clock ; 8.055 ; 8.357 ; Rise       ; system_clock    ;
-;  disp_hex5[2] ; system_clock ; 8.055 ; 8.357 ; Rise       ; system_clock    ;
-;  disp_hex5[3] ; system_clock ; 7.932 ; 8.199 ; Rise       ; system_clock    ;
-;  disp_hex5[4] ; system_clock ; 7.493 ; 7.631 ; Rise       ; system_clock    ;
-;  disp_hex5[6] ; system_clock ; 7.584 ; 7.741 ; Rise       ; system_clock    ;
+; LED[*]        ; system_clock ; 9.749 ; 9.881 ; Rise       ; system_clock    ;
+;  LED[0]       ; system_clock ; 8.018 ; 8.334 ; Rise       ; system_clock    ;
+;  LED[1]       ; system_clock ; 9.047 ; 9.143 ; Rise       ; system_clock    ;
+;  LED[2]       ; system_clock ; 7.670 ; 7.945 ; Rise       ; system_clock    ;
+;  LED[3]       ; system_clock ; 9.749 ; 9.881 ; Rise       ; system_clock    ;
+;  LED[4]       ; system_clock ; 8.143 ; 8.385 ; Rise       ; system_clock    ;
+;  LED[5]       ; system_clock ; 9.127 ; 9.276 ; Rise       ; system_clock    ;
+;  LED[6]       ; system_clock ; 9.514 ; 9.812 ; Rise       ; system_clock    ;
+;  LED[7]       ; system_clock ; 9.392 ; 9.669 ; Rise       ; system_clock    ;
+; disp_hex0[*]  ; system_clock ; 8.178 ; 8.547 ; Rise       ; system_clock    ;
+;  disp_hex0[2] ; system_clock ; 7.605 ; 7.715 ; Rise       ; system_clock    ;
+;  disp_hex0[3] ; system_clock ; 8.136 ; 8.454 ; Rise       ; system_clock    ;
+;  disp_hex0[4] ; system_clock ; 7.479 ; 7.579 ; Rise       ; system_clock    ;
+;  disp_hex0[6] ; system_clock ; 8.178 ; 8.547 ; Rise       ; system_clock    ;
+; disp_hex1[*]  ; system_clock ; 7.854 ; 8.108 ; Rise       ; system_clock    ;
+;  disp_hex1[2] ; system_clock ; 7.627 ; 7.743 ; Rise       ; system_clock    ;
+;  disp_hex1[3] ; system_clock ; 7.552 ; 7.630 ; Rise       ; system_clock    ;
+;  disp_hex1[4] ; system_clock ; 7.597 ; 7.654 ; Rise       ; system_clock    ;
+;  disp_hex1[6] ; system_clock ; 7.854 ; 8.108 ; Rise       ; system_clock    ;
+; disp_hex2[*]  ; system_clock ; 8.763 ; 9.329 ; Rise       ; system_clock    ;
+;  disp_hex2[2] ; system_clock ; 8.256 ; 8.663 ; Rise       ; system_clock    ;
+;  disp_hex2[3] ; system_clock ; 7.594 ; 7.695 ; Rise       ; system_clock    ;
+;  disp_hex2[4] ; system_clock ; 8.075 ; 8.332 ; Rise       ; system_clock    ;
+;  disp_hex2[6] ; system_clock ; 8.763 ; 9.329 ; Rise       ; system_clock    ;
+; disp_hex3[*]  ; system_clock ; 8.131 ; 8.530 ; Rise       ; system_clock    ;
+;  disp_hex3[2] ; system_clock ; 8.131 ; 8.530 ; Rise       ; system_clock    ;
+;  disp_hex3[3] ; system_clock ; 8.082 ; 8.441 ; Rise       ; system_clock    ;
+;  disp_hex3[4] ; system_clock ; 7.948 ; 8.252 ; Rise       ; system_clock    ;
+;  disp_hex3[6] ; system_clock ; 7.571 ; 7.762 ; Rise       ; system_clock    ;
+; disp_hex4[*]  ; system_clock ; 8.008 ; 8.292 ; Rise       ; system_clock    ;
+;  disp_hex4[2] ; system_clock ; 7.292 ; 7.310 ; Rise       ; system_clock    ;
+;  disp_hex4[3] ; system_clock ; 7.698 ; 7.924 ; Rise       ; system_clock    ;
+;  disp_hex4[4] ; system_clock ; 7.861 ; 8.123 ; Rise       ; system_clock    ;
+;  disp_hex4[6] ; system_clock ; 8.008 ; 8.292 ; Rise       ; system_clock    ;
+; disp_hex5[*]  ; system_clock ; 8.223 ; 8.608 ; Rise       ; system_clock    ;
+;  disp_hex5[2] ; system_clock ; 7.877 ; 8.032 ; Rise       ; system_clock    ;
+;  disp_hex5[3] ; system_clock ; 7.819 ; 8.022 ; Rise       ; system_clock    ;
+;  disp_hex5[4] ; system_clock ; 7.812 ; 8.019 ; Rise       ; system_clock    ;
+;  disp_hex5[6] ; system_clock ; 8.223 ; 8.608 ; Rise       ; system_clock    ;
 +---------------+--------------+-------+-------+------------+-----------------+
 
 
@@ -254,47 +257,51 @@ No paths to report.
 +---------------+--------------+-------+-------+------------+-----------------+
 ; Data Port     ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +---------------+--------------+-------+-------+------------+-----------------+
-; LED[*]        ; system_clock ; 7.364 ; 7.434 ; Rise       ; system_clock    ;
-;  LED[4]       ; system_clock ; 7.421 ; 7.632 ; Rise       ; system_clock    ;
-;  LED[5]       ; system_clock ; 7.597 ; 7.659 ; Rise       ; system_clock    ;
-;  LED[6]       ; system_clock ; 7.364 ; 7.434 ; Rise       ; system_clock    ;
-;  LED[7]       ; system_clock ; 7.462 ; 7.602 ; Rise       ; system_clock    ;
-; disp_hex0[*]  ; system_clock ; 6.865 ; 6.883 ; Rise       ; system_clock    ;
-;  disp_hex0[2] ; system_clock ; 6.922 ; 7.016 ; Rise       ; system_clock    ;
-;  disp_hex0[3] ; system_clock ; 7.470 ; 7.695 ; Rise       ; system_clock    ;
-;  disp_hex0[4] ; system_clock ; 6.865 ; 6.883 ; Rise       ; system_clock    ;
-;  disp_hex0[6] ; system_clock ; 7.424 ; 7.701 ; Rise       ; system_clock    ;
-; disp_hex1[*]  ; system_clock ; 7.000 ; 7.096 ; Rise       ; system_clock    ;
-;  disp_hex1[2] ; system_clock ; 7.152 ; 7.357 ; Rise       ; system_clock    ;
-;  disp_hex1[3] ; system_clock ; 7.126 ; 7.266 ; Rise       ; system_clock    ;
-;  disp_hex1[4] ; system_clock ; 7.032 ; 7.125 ; Rise       ; system_clock    ;
-;  disp_hex1[6] ; system_clock ; 7.000 ; 7.096 ; Rise       ; system_clock    ;
-; disp_hex2[*]  ; system_clock ; 7.265 ; 7.381 ; Rise       ; system_clock    ;
-;  disp_hex2[2] ; system_clock ; 7.506 ; 7.835 ; Rise       ; system_clock    ;
-;  disp_hex2[3] ; system_clock ; 7.404 ; 7.703 ; Rise       ; system_clock    ;
-;  disp_hex2[4] ; system_clock ; 7.688 ; 8.086 ; Rise       ; system_clock    ;
-;  disp_hex2[6] ; system_clock ; 7.265 ; 7.381 ; Rise       ; system_clock    ;
-; disp_hex3[*]  ; system_clock ; 6.730 ; 6.815 ; Rise       ; system_clock    ;
-;  disp_hex3[2] ; system_clock ; 7.134 ; 7.357 ; Rise       ; system_clock    ;
-;  disp_hex3[3] ; system_clock ; 7.128 ; 7.349 ; Rise       ; system_clock    ;
-;  disp_hex3[4] ; system_clock ; 7.357 ; 7.600 ; Rise       ; system_clock    ;
-;  disp_hex3[6] ; system_clock ; 6.730 ; 6.815 ; Rise       ; system_clock    ;
-; disp_hex4[*]  ; system_clock ; 6.669 ; 6.680 ; Rise       ; system_clock    ;
-;  disp_hex4[2] ; system_clock ; 6.669 ; 6.680 ; Rise       ; system_clock    ;
-;  disp_hex4[3] ; system_clock ; 7.196 ; 7.397 ; Rise       ; system_clock    ;
-;  disp_hex4[4] ; system_clock ; 7.005 ; 7.140 ; Rise       ; system_clock    ;
-;  disp_hex4[6] ; system_clock ; 7.097 ; 7.255 ; Rise       ; system_clock    ;
-; disp_hex5[*]  ; system_clock ; 6.872 ; 7.004 ; Rise       ; system_clock    ;
-;  disp_hex5[2] ; system_clock ; 7.364 ; 7.615 ; Rise       ; system_clock    ;
-;  disp_hex5[3] ; system_clock ; 7.251 ; 7.477 ; Rise       ; system_clock    ;
-;  disp_hex5[4] ; system_clock ; 6.872 ; 7.004 ; Rise       ; system_clock    ;
-;  disp_hex5[6] ; system_clock ; 6.958 ; 7.109 ; Rise       ; system_clock    ;
+; LED[*]        ; system_clock ; 7.002 ; 7.228 ; Rise       ; system_clock    ;
+;  LED[0]       ; system_clock ; 7.301 ; 7.522 ; Rise       ; system_clock    ;
+;  LED[1]       ; system_clock ; 7.341 ; 7.422 ; Rise       ; system_clock    ;
+;  LED[2]       ; system_clock ; 7.002 ; 7.228 ; Rise       ; system_clock    ;
+;  LED[3]       ; system_clock ; 7.958 ; 8.043 ; Rise       ; system_clock    ;
+;  LED[4]       ; system_clock ; 7.427 ; 7.631 ; Rise       ; system_clock    ;
+;  LED[5]       ; system_clock ; 7.399 ; 7.522 ; Rise       ; system_clock    ;
+;  LED[6]       ; system_clock ; 7.714 ; 7.914 ; Rise       ; system_clock    ;
+;  LED[7]       ; system_clock ; 7.616 ; 7.828 ; Rise       ; system_clock    ;
+; disp_hex0[*]  ; system_clock ; 6.864 ; 6.961 ; Rise       ; system_clock    ;
+;  disp_hex0[2] ; system_clock ; 6.970 ; 7.058 ; Rise       ; system_clock    ;
+;  disp_hex0[3] ; system_clock ; 7.465 ; 7.761 ; Rise       ; system_clock    ;
+;  disp_hex0[4] ; system_clock ; 6.864 ; 6.961 ; Rise       ; system_clock    ;
+;  disp_hex0[6] ; system_clock ; 7.503 ; 7.844 ; Rise       ; system_clock    ;
+; disp_hex1[*]  ; system_clock ; 6.918 ; 6.980 ; Rise       ; system_clock    ;
+;  disp_hex1[2] ; system_clock ; 6.981 ; 7.071 ; Rise       ; system_clock    ;
+;  disp_hex1[3] ; system_clock ; 6.918 ; 6.980 ; Rise       ; system_clock    ;
+;  disp_hex1[4] ; system_clock ; 6.958 ; 7.011 ; Rise       ; system_clock    ;
+;  disp_hex1[6] ; system_clock ; 7.176 ; 7.404 ; Rise       ; system_clock    ;
+; disp_hex2[*]  ; system_clock ; 6.953 ; 7.035 ; Rise       ; system_clock    ;
+;  disp_hex2[2] ; system_clock ; 7.566 ; 7.942 ; Rise       ; system_clock    ;
+;  disp_hex2[3] ; system_clock ; 6.953 ; 7.035 ; Rise       ; system_clock    ;
+;  disp_hex2[4] ; system_clock ; 7.398 ; 7.617 ; Rise       ; system_clock    ;
+;  disp_hex2[6] ; system_clock ; 8.027 ; 8.530 ; Rise       ; system_clock    ;
+; disp_hex3[*]  ; system_clock ; 6.918 ; 7.092 ; Rise       ; system_clock    ;
+;  disp_hex3[2] ; system_clock ; 7.402 ; 7.753 ; Rise       ; system_clock    ;
+;  disp_hex3[3] ; system_clock ; 7.406 ; 7.738 ; Rise       ; system_clock    ;
+;  disp_hex3[4] ; system_clock ; 7.256 ; 7.526 ; Rise       ; system_clock    ;
+;  disp_hex3[6] ; system_clock ; 6.918 ; 7.092 ; Rise       ; system_clock    ;
+; disp_hex4[*]  ; system_clock ; 6.675 ; 6.686 ; Rise       ; system_clock    ;
+;  disp_hex4[2] ; system_clock ; 6.675 ; 6.686 ; Rise       ; system_clock    ;
+;  disp_hex4[3] ; system_clock ; 7.024 ; 7.226 ; Rise       ; system_clock    ;
+;  disp_hex4[4] ; system_clock ; 7.168 ; 7.363 ; Rise       ; system_clock    ;
+;  disp_hex4[6] ; system_clock ; 7.323 ; 7.574 ; Rise       ; system_clock    ;
+; disp_hex5[*]  ; system_clock ; 7.147 ; 7.294 ; Rise       ; system_clock    ;
+;  disp_hex5[2] ; system_clock ; 7.194 ; 7.294 ; Rise       ; system_clock    ;
+;  disp_hex5[3] ; system_clock ; 7.147 ; 7.318 ; Rise       ; system_clock    ;
+;  disp_hex5[4] ; system_clock ; 7.157 ; 7.332 ; Rise       ; system_clock    ;
+;  disp_hex5[6] ; system_clock ; 7.478 ; 7.775 ; Rise       ; system_clock    ;
 +---------------+--------------+-------+-------+------------+-----------------+
 
 
-----------------------------------------------
-; Slow 1100mV 85C Model Metastability Report ;
-----------------------------------------------
+-----------------------------------------------
+; Slow 1100mV 85C Model Metastability Summary ;
+-----------------------------------------------
 No synchronizer chains to report.
 
 
@@ -303,7 +310,7 @@ No synchronizer chains to report.
 +------------+-----------------+--------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name   ; Note ;
 +------------+-----------------+--------------+------+
-; 139.92 MHz ; 139.92 MHz      ; system_clock ;      ;
+; 132.98 MHz ; 132.98 MHz      ; system_clock ;      ;
 +------------+-----------------+--------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -313,7 +320,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------+--------+---------------+
 ; Clock        ; Slack  ; End Point TNS ;
 +--------------+--------+---------------+
-; system_clock ; -6.147 ; -392.664      ;
+; system_clock ; -6.520 ; -591.128      ;
 +--------------+--------+---------------+
 
 
@@ -322,7 +329,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; system_clock ; 0.292 ; 0.000         ;
+; system_clock ; 0.462 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -343,7 +350,7 @@ No paths to report.
 +--------------+--------+--------------------------+
 ; Clock        ; Slack  ; End Point TNS            ;
 +--------------+--------+--------------------------+
-; system_clock ; -0.394 ; -47.107                  ;
+; system_clock ; -0.394 ; -64.014                  ;
 +--------------+--------+--------------------------+
 
 
@@ -352,17 +359,17 @@ No paths to report.
 +--------------+--------------+-------+-------+------------+-----------------+
 ; Data Port    ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +--------------+--------------+-------+-------+------------+-----------------+
-; dir_switch_2 ; system_clock ; 0.935 ; 1.330 ; Rise       ; system_clock    ;
+; dir_switch_2 ; system_clock ; 0.789 ; 1.062 ; Rise       ; system_clock    ;
 +--------------+--------------+-------+-------+------------+-----------------+
 
 
-+-----------------------------------------------------------------------------+
-; Hold Times                                                                  ;
-+--------------+--------------+-------+--------+------------+-----------------+
-; Data Port    ; Clock Port   ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
-+--------------+--------------+-------+--------+------------+-----------------+
-; dir_switch_2 ; system_clock ; 0.158 ; -0.143 ; Rise       ; system_clock    ;
-+--------------+--------------+-------+--------+------------+-----------------+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++--------------+--------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+--------------+-------+-------+------------+-----------------+
+; dir_switch_2 ; system_clock ; 0.248 ; 0.008 ; Rise       ; system_clock    ;
++--------------+--------------+-------+-------+------------+-----------------+
 
 
 +-----------------------------------------------------------------------------+
@@ -370,41 +377,45 @@ No paths to report.
 +---------------+--------------+-------+-------+------------+-----------------+
 ; Data Port     ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +---------------+--------------+-------+-------+------------+-----------------+
-; LED[*]        ; system_clock ; 9.150 ; 9.253 ; Rise       ; system_clock    ;
-;  LED[4]       ; system_clock ; 7.943 ; 8.217 ; Rise       ; system_clock    ;
-;  LED[5]       ; system_clock ; 9.150 ; 9.253 ; Rise       ; system_clock    ;
-;  LED[6]       ; system_clock ; 8.909 ; 9.015 ; Rise       ; system_clock    ;
-;  LED[7]       ; system_clock ; 9.020 ; 9.204 ; Rise       ; system_clock    ;
-; disp_hex0[*]  ; system_clock ; 7.941 ; 8.280 ; Rise       ; system_clock    ;
-;  disp_hex0[2] ; system_clock ; 7.390 ; 7.557 ; Rise       ; system_clock    ;
-;  disp_hex0[3] ; system_clock ; 7.941 ; 8.262 ; Rise       ; system_clock    ;
-;  disp_hex0[4] ; system_clock ; 7.321 ; 7.394 ; Rise       ; system_clock    ;
-;  disp_hex0[6] ; system_clock ; 7.911 ; 8.280 ; Rise       ; system_clock    ;
-; disp_hex1[*]  ; system_clock ; 7.625 ; 7.878 ; Rise       ; system_clock    ;
-;  disp_hex1[2] ; system_clock ; 7.625 ; 7.878 ; Rise       ; system_clock    ;
-;  disp_hex1[3] ; system_clock ; 7.578 ; 7.797 ; Rise       ; system_clock    ;
-;  disp_hex1[4] ; system_clock ; 7.500 ; 7.659 ; Rise       ; system_clock    ;
-;  disp_hex1[6] ; system_clock ; 7.450 ; 7.621 ; Rise       ; system_clock    ;
-; disp_hex2[*]  ; system_clock ; 8.190 ; 8.646 ; Rise       ; system_clock    ;
-;  disp_hex2[2] ; system_clock ; 7.992 ; 8.364 ; Rise       ; system_clock    ;
-;  disp_hex2[3] ; system_clock ; 7.896 ; 8.242 ; Rise       ; system_clock    ;
-;  disp_hex2[4] ; system_clock ; 8.190 ; 8.646 ; Rise       ; system_clock    ;
-;  disp_hex2[6] ; system_clock ; 7.721 ; 7.942 ; Rise       ; system_clock    ;
-; disp_hex3[*]  ; system_clock ; 7.840 ; 8.158 ; Rise       ; system_clock    ;
-;  disp_hex3[2] ; system_clock ; 7.640 ; 7.872 ; Rise       ; system_clock    ;
-;  disp_hex3[3] ; system_clock ; 7.628 ; 7.866 ; Rise       ; system_clock    ;
-;  disp_hex3[4] ; system_clock ; 7.840 ; 8.158 ; Rise       ; system_clock    ;
-;  disp_hex3[6] ; system_clock ; 7.220 ; 7.313 ; Rise       ; system_clock    ;
-; disp_hex4[*]  ; system_clock ; 7.725 ; 8.010 ; Rise       ; system_clock    ;
-;  disp_hex4[2] ; system_clock ; 7.136 ; 7.177 ; Rise       ; system_clock    ;
-;  disp_hex4[3] ; system_clock ; 7.725 ; 8.010 ; Rise       ; system_clock    ;
-;  disp_hex4[4] ; system_clock ; 7.484 ; 7.672 ; Rise       ; system_clock    ;
-;  disp_hex4[6] ; system_clock ; 7.589 ; 7.776 ; Rise       ; system_clock    ;
-; disp_hex5[*]  ; system_clock ; 7.864 ; 8.175 ; Rise       ; system_clock    ;
-;  disp_hex5[2] ; system_clock ; 7.864 ; 8.175 ; Rise       ; system_clock    ;
-;  disp_hex5[3] ; system_clock ; 7.755 ; 8.028 ; Rise       ; system_clock    ;
-;  disp_hex5[4] ; system_clock ; 7.334 ; 7.503 ; Rise       ; system_clock    ;
-;  disp_hex5[6] ; system_clock ; 7.421 ; 7.603 ; Rise       ; system_clock    ;
+; LED[*]        ; system_clock ; 9.501 ; 9.679 ; Rise       ; system_clock    ;
+;  LED[0]       ; system_clock ; 7.848 ; 8.166 ; Rise       ; system_clock    ;
+;  LED[1]       ; system_clock ; 8.868 ; 8.976 ; Rise       ; system_clock    ;
+;  LED[2]       ; system_clock ; 7.511 ; 7.805 ; Rise       ; system_clock    ;
+;  LED[3]       ; system_clock ; 9.501 ; 9.679 ; Rise       ; system_clock    ;
+;  LED[4]       ; system_clock ; 7.959 ; 8.234 ; Rise       ; system_clock    ;
+;  LED[5]       ; system_clock ; 8.954 ; 9.109 ; Rise       ; system_clock    ;
+;  LED[6]       ; system_clock ; 9.314 ; 9.626 ; Rise       ; system_clock    ;
+;  LED[7]       ; system_clock ; 9.211 ; 9.486 ; Rise       ; system_clock    ;
+; disp_hex0[*]  ; system_clock ; 7.991 ; 8.377 ; Rise       ; system_clock    ;
+;  disp_hex0[2] ; system_clock ; 7.417 ; 7.566 ; Rise       ; system_clock    ;
+;  disp_hex0[3] ; system_clock ; 7.936 ; 8.286 ; Rise       ; system_clock    ;
+;  disp_hex0[4] ; system_clock ; 7.319 ; 7.456 ; Rise       ; system_clock    ;
+;  disp_hex0[6] ; system_clock ; 7.991 ; 8.377 ; Rise       ; system_clock    ;
+; disp_hex1[*]  ; system_clock ; 7.664 ; 7.953 ; Rise       ; system_clock    ;
+;  disp_hex1[2] ; system_clock ; 7.442 ; 7.606 ; Rise       ; system_clock    ;
+;  disp_hex1[3] ; system_clock ; 7.360 ; 7.492 ; Rise       ; system_clock    ;
+;  disp_hex1[4] ; system_clock ; 7.415 ; 7.524 ; Rise       ; system_clock    ;
+;  disp_hex1[6] ; system_clock ; 7.664 ; 7.953 ; Rise       ; system_clock    ;
+; disp_hex2[*]  ; system_clock ; 8.547 ; 9.114 ; Rise       ; system_clock    ;
+;  disp_hex2[2] ; system_clock ; 8.066 ; 8.499 ; Rise       ; system_clock    ;
+;  disp_hex2[3] ; system_clock ; 7.407 ; 7.553 ; Rise       ; system_clock    ;
+;  disp_hex2[4] ; system_clock ; 7.858 ; 8.162 ; Rise       ; system_clock    ;
+;  disp_hex2[6] ; system_clock ; 8.547 ; 9.114 ; Rise       ; system_clock    ;
+; disp_hex3[*]  ; system_clock ; 7.950 ; 8.352 ; Rise       ; system_clock    ;
+;  disp_hex3[2] ; system_clock ; 7.950 ; 8.352 ; Rise       ; system_clock    ;
+;  disp_hex3[3] ; system_clock ; 7.915 ; 8.266 ; Rise       ; system_clock    ;
+;  disp_hex3[4] ; system_clock ; 7.757 ; 8.097 ; Rise       ; system_clock    ;
+;  disp_hex3[6] ; system_clock ; 7.434 ; 7.618 ; Rise       ; system_clock    ;
+; disp_hex4[*]  ; system_clock ; 7.834 ; 8.121 ; Rise       ; system_clock    ;
+;  disp_hex4[2] ; system_clock ; 7.135 ; 7.178 ; Rise       ; system_clock    ;
+;  disp_hex4[3] ; system_clock ; 7.533 ; 7.775 ; Rise       ; system_clock    ;
+;  disp_hex4[4] ; system_clock ; 7.685 ; 7.957 ; Rise       ; system_clock    ;
+;  disp_hex4[6] ; system_clock ; 7.834 ; 8.121 ; Rise       ; system_clock    ;
+; disp_hex5[*]  ; system_clock ; 8.011 ; 8.425 ; Rise       ; system_clock    ;
+;  disp_hex5[2] ; system_clock ; 7.659 ; 7.849 ; Rise       ; system_clock    ;
+;  disp_hex5[3] ; system_clock ; 7.617 ; 7.842 ; Rise       ; system_clock    ;
+;  disp_hex5[4] ; system_clock ; 7.613 ; 7.859 ; Rise       ; system_clock    ;
+;  disp_hex5[6] ; system_clock ; 8.011 ; 8.425 ; Rise       ; system_clock    ;
 +---------------+--------------+-------+-------+------------+-----------------+
 
 
@@ -413,47 +424,51 @@ No paths to report.
 +---------------+--------------+-------+-------+------------+-----------------+
 ; Data Port     ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +---------------+--------------+-------+-------+------------+-----------------+
-; LED[*]        ; system_clock ; 7.224 ; 7.321 ; Rise       ; system_clock    ;
-;  LED[4]       ; system_clock ; 7.255 ; 7.501 ; Rise       ; system_clock    ;
-;  LED[5]       ; system_clock ; 7.445 ; 7.537 ; Rise       ; system_clock    ;
-;  LED[6]       ; system_clock ; 7.224 ; 7.321 ; Rise       ; system_clock    ;
-;  LED[7]       ; system_clock ; 7.321 ; 7.479 ; Rise       ; system_clock    ;
-; disp_hex0[*]  ; system_clock ; 6.704 ; 6.773 ; Rise       ; system_clock    ;
-;  disp_hex0[2] ; system_clock ; 6.755 ; 6.895 ; Rise       ; system_clock    ;
-;  disp_hex0[3] ; system_clock ; 7.265 ; 7.538 ; Rise       ; system_clock    ;
-;  disp_hex0[4] ; system_clock ; 6.704 ; 6.773 ; Rise       ; system_clock    ;
-;  disp_hex0[6] ; system_clock ; 7.240 ; 7.552 ; Rise       ; system_clock    ;
-; disp_hex1[*]  ; system_clock ; 6.829 ; 6.980 ; Rise       ; system_clock    ;
-;  disp_hex1[2] ; system_clock ; 7.000 ; 7.236 ; Rise       ; system_clock    ;
-;  disp_hex1[3] ; system_clock ; 6.949 ; 7.144 ; Rise       ; system_clock    ;
-;  disp_hex1[4] ; system_clock ; 6.866 ; 7.012 ; Rise       ; system_clock    ;
-;  disp_hex1[6] ; system_clock ; 6.829 ; 6.980 ; Rise       ; system_clock    ;
-; disp_hex2[*]  ; system_clock ; 7.060 ; 7.232 ; Rise       ; system_clock    ;
-;  disp_hex2[2] ; system_clock ; 7.331 ; 7.672 ; Rise       ; system_clock    ;
-;  disp_hex2[3] ; system_clock ; 7.243 ; 7.561 ; Rise       ; system_clock    ;
-;  disp_hex2[4] ; system_clock ; 7.503 ; 7.912 ; Rise       ; system_clock    ;
-;  disp_hex2[6] ; system_clock ; 7.060 ; 7.232 ; Rise       ; system_clock    ;
-; disp_hex3[*]  ; system_clock ; 6.613 ; 6.702 ; Rise       ; system_clock    ;
-;  disp_hex3[2] ; system_clock ; 7.004 ; 7.217 ; Rise       ; system_clock    ;
-;  disp_hex3[3] ; system_clock ; 6.991 ; 7.208 ; Rise       ; system_clock    ;
-;  disp_hex3[4] ; system_clock ; 7.178 ; 7.459 ; Rise       ; system_clock    ;
-;  disp_hex3[6] ; system_clock ; 6.613 ; 6.702 ; Rise       ; system_clock    ;
-; disp_hex4[*]  ; system_clock ; 6.534 ; 6.570 ; Rise       ; system_clock    ;
-;  disp_hex4[2] ; system_clock ; 6.534 ; 6.570 ; Rise       ; system_clock    ;
-;  disp_hex4[3] ; system_clock ; 7.032 ; 7.251 ; Rise       ; system_clock    ;
-;  disp_hex4[4] ; system_clock ; 6.851 ; 7.015 ; Rise       ; system_clock    ;
-;  disp_hex4[6] ; system_clock ; 6.948 ; 7.111 ; Rise       ; system_clock    ;
-; disp_hex5[*]  ; system_clock ; 6.727 ; 6.890 ; Rise       ; system_clock    ;
-;  disp_hex5[2] ; system_clock ; 7.191 ; 7.449 ; Rise       ; system_clock    ;
-;  disp_hex5[3] ; system_clock ; 7.091 ; 7.320 ; Rise       ; system_clock    ;
-;  disp_hex5[4] ; system_clock ; 6.727 ; 6.890 ; Rise       ; system_clock    ;
-;  disp_hex5[6] ; system_clock ; 6.811 ; 6.986 ; Rise       ; system_clock    ;
+; LED[*]        ; system_clock ; 6.859 ; 7.116 ; Rise       ; system_clock    ;
+;  LED[0]       ; system_clock ; 7.149 ; 7.383 ; Rise       ; system_clock    ;
+;  LED[1]       ; system_clock ; 7.200 ; 7.298 ; Rise       ; system_clock    ;
+;  LED[2]       ; system_clock ; 6.859 ; 7.116 ; Rise       ; system_clock    ;
+;  LED[3]       ; system_clock ; 7.757 ; 7.903 ; Rise       ; system_clock    ;
+;  LED[4]       ; system_clock ; 7.261 ; 7.500 ; Rise       ; system_clock    ;
+;  LED[5]       ; system_clock ; 7.265 ; 7.397 ; Rise       ; system_clock    ;
+;  LED[6]       ; system_clock ; 7.557 ; 7.786 ; Rise       ; system_clock    ;
+;  LED[7]       ; system_clock ; 7.479 ; 7.700 ; Rise       ; system_clock    ;
+; disp_hex0[*]  ; system_clock ; 6.718 ; 6.852 ; Rise       ; system_clock    ;
+;  disp_hex0[2] ; system_clock ; 6.799 ; 6.931 ; Rise       ; system_clock    ;
+;  disp_hex0[3] ; system_clock ; 7.282 ; 7.603 ; Rise       ; system_clock    ;
+;  disp_hex0[4] ; system_clock ; 6.718 ; 6.852 ; Rise       ; system_clock    ;
+;  disp_hex0[6] ; system_clock ; 7.330 ; 7.682 ; Rise       ; system_clock    ;
+; disp_hex1[*]  ; system_clock ; 6.745 ; 6.865 ; Rise       ; system_clock    ;
+;  disp_hex1[2] ; system_clock ; 6.815 ; 6.956 ; Rise       ; system_clock    ;
+;  disp_hex1[3] ; system_clock ; 6.745 ; 6.865 ; Rise       ; system_clock    ;
+;  disp_hex1[4] ; system_clock ; 6.793 ; 6.899 ; Rise       ; system_clock    ;
+;  disp_hex1[6] ; system_clock ; 7.008 ; 7.268 ; Rise       ; system_clock    ;
+; disp_hex2[*]  ; system_clock ; 6.786 ; 6.920 ; Rise       ; system_clock    ;
+;  disp_hex2[2] ; system_clock ; 7.393 ; 7.786 ; Rise       ; system_clock    ;
+;  disp_hex2[3] ; system_clock ; 6.786 ; 6.920 ; Rise       ; system_clock    ;
+;  disp_hex2[4] ; system_clock ; 7.200 ; 7.460 ; Rise       ; system_clock    ;
+;  disp_hex2[6] ; system_clock ; 7.828 ; 8.329 ; Rise       ; system_clock    ;
+; disp_hex3[*]  ; system_clock ; 6.800 ; 6.966 ; Rise       ; system_clock    ;
+;  disp_hex3[2] ; system_clock ; 7.248 ; 7.596 ; Rise       ; system_clock    ;
+;  disp_hex3[3] ; system_clock ; 7.252 ; 7.570 ; Rise       ; system_clock    ;
+;  disp_hex3[4] ; system_clock ; 7.088 ; 7.391 ; Rise       ; system_clock    ;
+;  disp_hex3[6] ; system_clock ; 6.800 ; 6.966 ; Rise       ; system_clock    ;
+; disp_hex4[*]  ; system_clock ; 6.535 ; 6.576 ; Rise       ; system_clock    ;
+;  disp_hex4[2] ; system_clock ; 6.535 ; 6.576 ; Rise       ; system_clock    ;
+;  disp_hex4[3] ; system_clock ; 6.881 ; 7.094 ; Rise       ; system_clock    ;
+;  disp_hex4[4] ; system_clock ; 7.011 ; 7.228 ; Rise       ; system_clock    ;
+;  disp_hex4[6] ; system_clock ; 7.167 ; 7.421 ; Rise       ; system_clock    ;
+; disp_hex5[*]  ; system_clock ; 6.966 ; 7.135 ; Rise       ; system_clock    ;
+;  disp_hex5[2] ; system_clock ; 6.997 ; 7.135 ; Rise       ; system_clock    ;
+;  disp_hex5[3] ; system_clock ; 6.966 ; 7.157 ; Rise       ; system_clock    ;
+;  disp_hex5[4] ; system_clock ; 6.975 ; 7.192 ; Rise       ; system_clock    ;
+;  disp_hex5[6] ; system_clock ; 7.291 ; 7.624 ; Rise       ; system_clock    ;
 +---------------+--------------+-------+-------+------------+-----------------+
 
 
----------------------------------------------
-; Slow 1100mV 0C Model Metastability Report ;
----------------------------------------------
+----------------------------------------------
+; Slow 1100mV 0C Model Metastability Summary ;
+----------------------------------------------
 No synchronizer chains to report.
 
 
@@ -462,7 +477,7 @@ No synchronizer chains to report.
 +--------------+--------+---------------+
 ; Clock        ; Slack  ; End Point TNS ;
 +--------------+--------+---------------+
-; system_clock ; -2.988 ; -184.859      ;
+; system_clock ; -3.228 ; -284.786      ;
 +--------------+--------+---------------+
 
 
@@ -471,7 +486,7 @@ No synchronizer chains to report.
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; system_clock ; 0.186 ; 0.000         ;
+; system_clock ; 0.241 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -492,7 +507,7 @@ No paths to report.
 +--------------+--------+---------------------------+
 ; Clock        ; Slack  ; End Point TNS             ;
 +--------------+--------+---------------------------+
-; system_clock ; -0.091 ; -7.404                    ;
+; system_clock ; -0.091 ; -9.995                    ;
 +--------------+--------+---------------------------+
 
 
@@ -501,17 +516,17 @@ No paths to report.
 +--------------+--------------+-------+-------+------------+-----------------+
 ; Data Port    ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +--------------+--------------+-------+-------+------------+-----------------+
-; dir_switch_2 ; system_clock ; 0.666 ; 1.320 ; Rise       ; system_clock    ;
+; dir_switch_2 ; system_clock ; 0.522 ; 1.084 ; Rise       ; system_clock    ;
 +--------------+--------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Hold Times                                                                   ;
-+--------------+--------------+--------+--------+------------+-----------------+
-; Data Port    ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+--------------+--------------+--------+--------+------------+-----------------+
-; dir_switch_2 ; system_clock ; -0.076 ; -0.657 ; Rise       ; system_clock    ;
-+--------------+--------------+--------+--------+------------+-----------------+
++-----------------------------------------------------------------------------+
+; Hold Times                                                                  ;
++--------------+--------------+-------+--------+------------+-----------------+
+; Data Port    ; Clock Port   ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+--------------+-------+--------+------------+-----------------+
+; dir_switch_2 ; system_clock ; 0.024 ; -0.512 ; Rise       ; system_clock    ;
++--------------+--------------+-------+--------+------------+-----------------+
 
 
 +-----------------------------------------------------------------------------+
@@ -519,41 +534,45 @@ No paths to report.
 +---------------+--------------+-------+-------+------------+-----------------+
 ; Data Port     ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +---------------+--------------+-------+-------+------------+-----------------+
-; LED[*]        ; system_clock ; 5.459 ; 5.634 ; Rise       ; system_clock    ;
-;  LED[4]       ; system_clock ; 4.828 ; 5.127 ; Rise       ; system_clock    ;
-;  LED[5]       ; system_clock ; 5.459 ; 5.634 ; Rise       ; system_clock    ;
-;  LED[6]       ; system_clock ; 5.323 ; 5.462 ; Rise       ; system_clock    ;
-;  LED[7]       ; system_clock ; 5.383 ; 5.614 ; Rise       ; system_clock    ;
-; disp_hex0[*]  ; system_clock ; 4.898 ; 5.233 ; Rise       ; system_clock    ;
-;  disp_hex0[2] ; system_clock ; 4.524 ; 4.702 ; Rise       ; system_clock    ;
-;  disp_hex0[3] ; system_clock ; 4.898 ; 5.219 ; Rise       ; system_clock    ;
-;  disp_hex0[4] ; system_clock ; 4.468 ; 4.568 ; Rise       ; system_clock    ;
-;  disp_hex0[6] ; system_clock ; 4.880 ; 5.233 ; Rise       ; system_clock    ;
-; disp_hex1[*]  ; system_clock ; 4.660 ; 4.915 ; Rise       ; system_clock    ;
-;  disp_hex1[2] ; system_clock ; 4.660 ; 4.915 ; Rise       ; system_clock    ;
-;  disp_hex1[3] ; system_clock ; 4.651 ; 4.869 ; Rise       ; system_clock    ;
-;  disp_hex1[4] ; system_clock ; 4.575 ; 4.750 ; Rise       ; system_clock    ;
-;  disp_hex1[6] ; system_clock ; 4.564 ; 4.745 ; Rise       ; system_clock    ;
-; disp_hex2[*]  ; system_clock ; 5.095 ; 5.543 ; Rise       ; system_clock    ;
-;  disp_hex2[2] ; system_clock ; 4.977 ; 5.352 ; Rise       ; system_clock    ;
-;  disp_hex2[3] ; system_clock ; 4.844 ; 5.192 ; Rise       ; system_clock    ;
-;  disp_hex2[4] ; system_clock ; 5.095 ; 5.543 ; Rise       ; system_clock    ;
-;  disp_hex2[6] ; system_clock ; 4.723 ; 4.931 ; Rise       ; system_clock    ;
-; disp_hex3[*]  ; system_clock ; 4.818 ; 5.142 ; Rise       ; system_clock    ;
-;  disp_hex3[2] ; system_clock ; 4.701 ; 4.991 ; Rise       ; system_clock    ;
-;  disp_hex3[3] ; system_clock ; 4.707 ; 4.976 ; Rise       ; system_clock    ;
-;  disp_hex3[4] ; system_clock ; 4.818 ; 5.142 ; Rise       ; system_clock    ;
-;  disp_hex3[6] ; system_clock ; 4.384 ; 4.543 ; Rise       ; system_clock    ;
-; disp_hex4[*]  ; system_clock ; 4.756 ; 5.066 ; Rise       ; system_clock    ;
-;  disp_hex4[2] ; system_clock ; 4.334 ; 4.415 ; Rise       ; system_clock    ;
-;  disp_hex4[3] ; system_clock ; 4.756 ; 5.066 ; Rise       ; system_clock    ;
-;  disp_hex4[4] ; system_clock ; 4.565 ; 4.777 ; Rise       ; system_clock    ;
-;  disp_hex4[6] ; system_clock ; 4.642 ; 4.891 ; Rise       ; system_clock    ;
-; disp_hex5[*]  ; system_clock ; 4.873 ; 5.209 ; Rise       ; system_clock    ;
-;  disp_hex5[2] ; system_clock ; 4.873 ; 5.209 ; Rise       ; system_clock    ;
-;  disp_hex5[3] ; system_clock ; 4.776 ; 5.075 ; Rise       ; system_clock    ;
-;  disp_hex5[4] ; system_clock ; 4.467 ; 4.653 ; Rise       ; system_clock    ;
-;  disp_hex5[6] ; system_clock ; 4.533 ; 4.733 ; Rise       ; system_clock    ;
+; LED[*]        ; system_clock ; 5.723 ; 5.955 ; Rise       ; system_clock    ;
+;  LED[0]       ; system_clock ; 4.788 ; 5.159 ; Rise       ; system_clock    ;
+;  LED[1]       ; system_clock ; 5.285 ; 5.453 ; Rise       ; system_clock    ;
+;  LED[2]       ; system_clock ; 4.559 ; 4.825 ; Rise       ; system_clock    ;
+;  LED[3]       ; system_clock ; 5.723 ; 5.955 ; Rise       ; system_clock    ;
+;  LED[4]       ; system_clock ; 4.843 ; 5.138 ; Rise       ; system_clock    ;
+;  LED[5]       ; system_clock ; 5.336 ; 5.548 ; Rise       ; system_clock    ;
+;  LED[6]       ; system_clock ; 5.604 ; 5.920 ; Rise       ; system_clock    ;
+;  LED[7]       ; system_clock ; 5.525 ; 5.846 ; Rise       ; system_clock    ;
+; disp_hex0[*]  ; system_clock ; 4.967 ; 5.356 ; Rise       ; system_clock    ;
+;  disp_hex0[2] ; system_clock ; 4.533 ; 4.698 ; Rise       ; system_clock    ;
+;  disp_hex0[3] ; system_clock ; 4.919 ; 5.273 ; Rise       ; system_clock    ;
+;  disp_hex0[4] ; system_clock ; 4.449 ; 4.597 ; Rise       ; system_clock    ;
+;  disp_hex0[6] ; system_clock ; 4.967 ; 5.356 ; Rise       ; system_clock    ;
+; disp_hex1[*]  ; system_clock ; 4.714 ; 5.001 ; Rise       ; system_clock    ;
+;  disp_hex1[2] ; system_clock ; 4.538 ; 4.716 ; Rise       ; system_clock    ;
+;  disp_hex1[3] ; system_clock ; 4.509 ; 4.652 ; Rise       ; system_clock    ;
+;  disp_hex1[4] ; system_clock ; 4.508 ; 4.639 ; Rise       ; system_clock    ;
+;  disp_hex1[6] ; system_clock ; 4.714 ; 5.001 ; Rise       ; system_clock    ;
+; disp_hex2[*]  ; system_clock ; 5.349 ; 5.917 ; Rise       ; system_clock    ;
+;  disp_hex2[2] ; system_clock ; 4.990 ; 5.412 ; Rise       ; system_clock    ;
+;  disp_hex2[3] ; system_clock ; 4.504 ; 4.666 ; Rise       ; system_clock    ;
+;  disp_hex2[4] ; system_clock ; 4.841 ; 5.147 ; Rise       ; system_clock    ;
+;  disp_hex2[6] ; system_clock ; 5.349 ; 5.917 ; Rise       ; system_clock    ;
+; disp_hex3[*]  ; system_clock ; 4.926 ; 5.340 ; Rise       ; system_clock    ;
+;  disp_hex3[2] ; system_clock ; 4.909 ; 5.340 ; Rise       ; system_clock    ;
+;  disp_hex3[3] ; system_clock ; 4.926 ; 5.301 ; Rise       ; system_clock    ;
+;  disp_hex3[4] ; system_clock ; 4.754 ; 5.085 ; Rise       ; system_clock    ;
+;  disp_hex3[6] ; system_clock ; 4.535 ; 4.778 ; Rise       ; system_clock    ;
+; disp_hex4[*]  ; system_clock ; 4.820 ; 5.160 ; Rise       ; system_clock    ;
+;  disp_hex4[2] ; system_clock ; 4.336 ; 4.419 ; Rise       ; system_clock    ;
+;  disp_hex4[3] ; system_clock ; 4.608 ; 4.869 ; Rise       ; system_clock    ;
+;  disp_hex4[4] ; system_clock ; 4.713 ; 5.009 ; Rise       ; system_clock    ;
+;  disp_hex4[6] ; system_clock ; 4.820 ; 5.160 ; Rise       ; system_clock    ;
+; disp_hex5[*]  ; system_clock ; 4.948 ; 5.357 ; Rise       ; system_clock    ;
+;  disp_hex5[2] ; system_clock ; 4.678 ; 4.875 ; Rise       ; system_clock    ;
+;  disp_hex5[3] ; system_clock ; 4.666 ; 4.898 ; Rise       ; system_clock    ;
+;  disp_hex5[4] ; system_clock ; 4.686 ; 4.938 ; Rise       ; system_clock    ;
+;  disp_hex5[6] ; system_clock ; 4.948 ; 5.357 ; Rise       ; system_clock    ;
 +---------------+--------------+-------+-------+------------+-----------------+
 
 
@@ -562,47 +581,51 @@ No paths to report.
 +---------------+--------------+-------+-------+------------+-----------------+
 ; Data Port     ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +---------------+--------------+-------+-------+------------+-----------------+
-; LED[*]        ; system_clock ; 4.399 ; 4.525 ; Rise       ; system_clock    ;
-;  LED[4]       ; system_clock ; 4.454 ; 4.725 ; Rise       ; system_clock    ;
-;  LED[5]       ; system_clock ; 4.524 ; 4.684 ; Rise       ; system_clock    ;
-;  LED[6]       ; system_clock ; 4.399 ; 4.525 ; Rise       ; system_clock    ;
-;  LED[7]       ; system_clock ; 4.449 ; 4.653 ; Rise       ; system_clock    ;
-; disp_hex0[*]  ; system_clock ; 4.136 ; 4.227 ; Rise       ; system_clock    ;
-;  disp_hex0[2] ; system_clock ; 4.178 ; 4.331 ; Rise       ; system_clock    ;
-;  disp_hex0[3] ; system_clock ; 4.530 ; 4.811 ; Rise       ; system_clock    ;
-;  disp_hex0[4] ; system_clock ; 4.136 ; 4.227 ; Rise       ; system_clock    ;
-;  disp_hex0[6] ; system_clock ; 4.516 ; 4.828 ; Rise       ; system_clock    ;
-; disp_hex1[*]  ; system_clock ; 4.230 ; 4.388 ; Rise       ; system_clock    ;
-;  disp_hex1[2] ; system_clock ; 4.325 ; 4.568 ; Rise       ; system_clock    ;
-;  disp_hex1[3] ; system_clock ; 4.313 ; 4.509 ; Rise       ; system_clock    ;
-;  disp_hex1[4] ; system_clock ; 4.230 ; 4.388 ; Rise       ; system_clock    ;
-;  disp_hex1[6] ; system_clock ; 4.231 ; 4.390 ; Rise       ; system_clock    ;
-; disp_hex2[*]  ; system_clock ; 4.367 ; 4.542 ; Rise       ; system_clock    ;
-;  disp_hex2[2] ; system_clock ; 4.616 ; 4.969 ; Rise       ; system_clock    ;
-;  disp_hex2[3] ; system_clock ; 4.492 ; 4.821 ; Rise       ; system_clock    ;
-;  disp_hex2[4] ; system_clock ; 4.717 ; 5.132 ; Rise       ; system_clock    ;
-;  disp_hex2[6] ; system_clock ; 4.367 ; 4.542 ; Rise       ; system_clock    ;
-; disp_hex3[*]  ; system_clock ; 4.057 ; 4.209 ; Rise       ; system_clock    ;
-;  disp_hex3[2] ; system_clock ; 4.357 ; 4.633 ; Rise       ; system_clock    ;
-;  disp_hex3[3] ; system_clock ; 4.362 ; 4.617 ; Rise       ; system_clock    ;
-;  disp_hex3[4] ; system_clock ; 4.456 ; 4.748 ; Rise       ; system_clock    ;
-;  disp_hex3[6] ; system_clock ; 4.057 ; 4.209 ; Rise       ; system_clock    ;
-; disp_hex4[*]  ; system_clock ; 4.013 ; 4.086 ; Rise       ; system_clock    ;
-;  disp_hex4[2] ; system_clock ; 4.013 ; 4.086 ; Rise       ; system_clock    ;
-;  disp_hex4[3] ; system_clock ; 4.368 ; 4.617 ; Rise       ; system_clock    ;
-;  disp_hex4[4] ; system_clock ; 4.225 ; 4.414 ; Rise       ; system_clock    ;
-;  disp_hex4[6] ; system_clock ; 4.296 ; 4.520 ; Rise       ; system_clock    ;
-; disp_hex5[*]  ; system_clock ; 4.143 ; 4.323 ; Rise       ; system_clock    ;
-;  disp_hex5[2] ; system_clock ; 4.505 ; 4.801 ; Rise       ; system_clock    ;
-;  disp_hex5[3] ; system_clock ; 4.418 ; 4.684 ; Rise       ; system_clock    ;
-;  disp_hex5[4] ; system_clock ; 4.143 ; 4.323 ; Rise       ; system_clock    ;
-;  disp_hex5[6] ; system_clock ; 4.205 ; 4.398 ; Rise       ; system_clock    ;
+; LED[*]        ; system_clock ; 4.205 ; 4.435 ; Rise       ; system_clock    ;
+;  LED[0]       ; system_clock ; 4.404 ; 4.700 ; Rise       ; system_clock    ;
+;  LED[1]       ; system_clock ; 4.372 ; 4.527 ; Rise       ; system_clock    ;
+;  LED[2]       ; system_clock ; 4.205 ; 4.435 ; Rise       ; system_clock    ;
+;  LED[3]       ; system_clock ; 4.763 ; 4.952 ; Rise       ; system_clock    ;
+;  LED[4]       ; system_clock ; 4.461 ; 4.723 ; Rise       ; system_clock    ;
+;  LED[5]       ; system_clock ; 4.409 ; 4.598 ; Rise       ; system_clock    ;
+;  LED[6]       ; system_clock ; 4.632 ; 4.872 ; Rise       ; system_clock    ;
+;  LED[7]       ; system_clock ; 4.566 ; 4.833 ; Rise       ; system_clock    ;
+; disp_hex0[*]  ; system_clock ; 4.131 ; 4.274 ; Rise       ; system_clock    ;
+;  disp_hex0[2] ; system_clock ; 4.203 ; 4.350 ; Rise       ; system_clock    ;
+;  disp_hex0[3] ; system_clock ; 4.562 ; 4.896 ; Rise       ; system_clock    ;
+;  disp_hex0[4] ; system_clock ; 4.131 ; 4.274 ; Rise       ; system_clock    ;
+;  disp_hex0[6] ; system_clock ; 4.607 ; 4.973 ; Rise       ; system_clock    ;
+; disp_hex1[*]  ; system_clock ; 4.174 ; 4.298 ; Rise       ; system_clock    ;
+;  disp_hex1[2] ; system_clock ; 4.199 ; 4.355 ; Rise       ; system_clock    ;
+;  disp_hex1[3] ; system_clock ; 4.177 ; 4.306 ; Rise       ; system_clock    ;
+;  disp_hex1[4] ; system_clock ; 4.174 ; 4.298 ; Rise       ; system_clock    ;
+;  disp_hex1[6] ; system_clock ; 4.352 ; 4.616 ; Rise       ; system_clock    ;
+; disp_hex2[*]  ; system_clock ; 4.169 ; 4.314 ; Rise       ; system_clock    ;
+;  disp_hex2[2] ; system_clock ; 4.624 ; 5.019 ; Rise       ; system_clock    ;
+;  disp_hex2[3] ; system_clock ; 4.169 ; 4.314 ; Rise       ; system_clock    ;
+;  disp_hex2[4] ; system_clock ; 4.485 ; 4.759 ; Rise       ; system_clock    ;
+;  disp_hex2[6] ; system_clock ; 4.956 ; 5.472 ; Rise       ; system_clock    ;
+; disp_hex3[*]  ; system_clock ; 4.188 ; 4.415 ; Rise       ; system_clock    ;
+;  disp_hex3[2] ; system_clock ; 4.515 ; 4.904 ; Rise       ; system_clock    ;
+;  disp_hex3[3] ; system_clock ; 4.563 ; 4.916 ; Rise       ; system_clock    ;
+;  disp_hex3[4] ; system_clock ; 4.383 ; 4.685 ; Rise       ; system_clock    ;
+;  disp_hex3[6] ; system_clock ; 4.188 ; 4.415 ; Rise       ; system_clock    ;
+; disp_hex4[*]  ; system_clock ; 4.017 ; 4.092 ; Rise       ; system_clock    ;
+;  disp_hex4[2] ; system_clock ; 4.017 ; 4.092 ; Rise       ; system_clock    ;
+;  disp_hex4[3] ; system_clock ; 4.250 ; 4.488 ; Rise       ; system_clock    ;
+;  disp_hex4[4] ; system_clock ; 4.343 ; 4.585 ; Rise       ; system_clock    ;
+;  disp_hex4[6] ; system_clock ; 4.457 ; 4.769 ; Rise       ; system_clock    ;
+; disp_hex5[*]  ; system_clock ; 4.314 ; 4.482 ; Rise       ; system_clock    ;
+;  disp_hex5[2] ; system_clock ; 4.324 ; 4.482 ; Rise       ; system_clock    ;
+;  disp_hex5[3] ; system_clock ; 4.314 ; 4.521 ; Rise       ; system_clock    ;
+;  disp_hex5[4] ; system_clock ; 4.340 ; 4.566 ; Rise       ; system_clock    ;
+;  disp_hex5[6] ; system_clock ; 4.541 ; 4.877 ; Rise       ; system_clock    ;
 +---------------+--------------+-------+-------+------------+-----------------+
 
 
-----------------------------------------------
-; Fast 1100mV 85C Model Metastability Report ;
-----------------------------------------------
+-----------------------------------------------
+; Fast 1100mV 85C Model Metastability Summary ;
+-----------------------------------------------
 No synchronizer chains to report.
 
 
@@ -611,7 +634,7 @@ No synchronizer chains to report.
 +--------------+--------+---------------+
 ; Clock        ; Slack  ; End Point TNS ;
 +--------------+--------+---------------+
-; system_clock ; -2.683 ; -163.725      ;
+; system_clock ; -2.910 ; -253.658      ;
 +--------------+--------+---------------+
 
 
@@ -620,7 +643,7 @@ No synchronizer chains to report.
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; system_clock ; 0.171 ; 0.000         ;
+; system_clock ; 0.233 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -641,7 +664,7 @@ No paths to report.
 +--------------+--------+--------------------------+
 ; Clock        ; Slack  ; End Point TNS            ;
 +--------------+--------+--------------------------+
-; system_clock ; -0.088 ; -7.171                   ;
+; system_clock ; -0.089 ; -9.763                   ;
 +--------------+--------+--------------------------+
 
 
@@ -650,7 +673,7 @@ No paths to report.
 +--------------+--------------+-------+-------+------------+-----------------+
 ; Data Port    ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +--------------+--------------+-------+-------+------------+-----------------+
-; dir_switch_2 ; system_clock ; 0.555 ; 1.196 ; Rise       ; system_clock    ;
+; dir_switch_2 ; system_clock ; 0.418 ; 0.997 ; Rise       ; system_clock    ;
 +--------------+--------------+-------+-------+------------+-----------------+
 
 
@@ -659,7 +682,7 @@ No paths to report.
 +--------------+--------------+-------+--------+------------+-----------------+
 ; Data Port    ; Clock Port   ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
 +--------------+--------------+-------+--------+------------+-----------------+
-; dir_switch_2 ; system_clock ; 0.014 ; -0.561 ; Rise       ; system_clock    ;
+; dir_switch_2 ; system_clock ; 0.110 ; -0.443 ; Rise       ; system_clock    ;
 +--------------+--------------+-------+--------+------------+-----------------+
 
 
@@ -668,41 +691,45 @@ No paths to report.
 +---------------+--------------+-------+-------+------------+-----------------+
 ; Data Port     ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +---------------+--------------+-------+-------+------------+-----------------+
-; LED[*]        ; system_clock ; 5.197 ; 5.350 ; Rise       ; system_clock    ;
-;  LED[4]       ; system_clock ; 4.536 ; 4.812 ; Rise       ; system_clock    ;
-;  LED[5]       ; system_clock ; 5.197 ; 5.350 ; Rise       ; system_clock    ;
-;  LED[6]       ; system_clock ; 5.088 ; 5.193 ; Rise       ; system_clock    ;
-;  LED[7]       ; system_clock ; 5.137 ; 5.326 ; Rise       ; system_clock    ;
-; disp_hex0[*]  ; system_clock ; 4.642 ; 4.883 ; Rise       ; system_clock    ;
-;  disp_hex0[2] ; system_clock ; 4.298 ; 4.419 ; Rise       ; system_clock    ;
-;  disp_hex0[3] ; system_clock ; 4.642 ; 4.882 ; Rise       ; system_clock    ;
-;  disp_hex0[4] ; system_clock ; 4.252 ; 4.310 ; Rise       ; system_clock    ;
-;  disp_hex0[6] ; system_clock ; 4.621 ; 4.883 ; Rise       ; system_clock    ;
-; disp_hex1[*]  ; system_clock ; 4.444 ; 4.623 ; Rise       ; system_clock    ;
-;  disp_hex1[2] ; system_clock ; 4.444 ; 4.623 ; Rise       ; system_clock    ;
-;  disp_hex1[3] ; system_clock ; 4.414 ; 4.571 ; Rise       ; system_clock    ;
-;  disp_hex1[4] ; system_clock ; 4.360 ; 4.477 ; Rise       ; system_clock    ;
-;  disp_hex1[6] ; system_clock ; 4.334 ; 4.457 ; Rise       ; system_clock    ;
-; disp_hex2[*]  ; system_clock ; 4.829 ; 5.162 ; Rise       ; system_clock    ;
-;  disp_hex2[2] ; system_clock ; 4.712 ; 4.986 ; Rise       ; system_clock    ;
-;  disp_hex2[3] ; system_clock ; 4.606 ; 4.857 ; Rise       ; system_clock    ;
-;  disp_hex2[4] ; system_clock ; 4.829 ; 5.162 ; Rise       ; system_clock    ;
-;  disp_hex2[6] ; system_clock ; 4.460 ; 4.618 ; Rise       ; system_clock    ;
-; disp_hex3[*]  ; system_clock ; 4.574 ; 4.809 ; Rise       ; system_clock    ;
-;  disp_hex3[2] ; system_clock ; 4.441 ; 4.668 ; Rise       ; system_clock    ;
-;  disp_hex3[3] ; system_clock ; 4.449 ; 4.650 ; Rise       ; system_clock    ;
-;  disp_hex3[4] ; system_clock ; 4.574 ; 4.809 ; Rise       ; system_clock    ;
-;  disp_hex3[6] ; system_clock ; 4.152 ; 4.279 ; Rise       ; system_clock    ;
-; disp_hex4[*]  ; system_clock ; 4.486 ; 4.726 ; Rise       ; system_clock    ;
-;  disp_hex4[2] ; system_clock ; 4.110 ; 4.171 ; Rise       ; system_clock    ;
-;  disp_hex4[3] ; system_clock ; 4.486 ; 4.726 ; Rise       ; system_clock    ;
-;  disp_hex4[4] ; system_clock ; 4.313 ; 4.478 ; Rise       ; system_clock    ;
-;  disp_hex4[6] ; system_clock ; 4.379 ; 4.579 ; Rise       ; system_clock    ;
-; disp_hex5[*]  ; system_clock ; 4.594 ; 4.851 ; Rise       ; system_clock    ;
-;  disp_hex5[2] ; system_clock ; 4.594 ; 4.851 ; Rise       ; system_clock    ;
-;  disp_hex5[3] ; system_clock ; 4.508 ; 4.738 ; Rise       ; system_clock    ;
-;  disp_hex5[4] ; system_clock ; 4.250 ; 4.373 ; Rise       ; system_clock    ;
-;  disp_hex5[6] ; system_clock ; 4.325 ; 4.456 ; Rise       ; system_clock    ;
+; LED[*]        ; system_clock ; 5.424 ; 5.619 ; Rise       ; system_clock    ;
+;  LED[0]       ; system_clock ; 4.510 ; 4.809 ; Rise       ; system_clock    ;
+;  LED[1]       ; system_clock ; 5.046 ; 5.184 ; Rise       ; system_clock    ;
+;  LED[2]       ; system_clock ; 4.314 ; 4.535 ; Rise       ; system_clock    ;
+;  LED[3]       ; system_clock ; 5.424 ; 5.619 ; Rise       ; system_clock    ;
+;  LED[4]       ; system_clock ; 4.549 ; 4.819 ; Rise       ; system_clock    ;
+;  LED[5]       ; system_clock ; 5.096 ; 5.266 ; Rise       ; system_clock    ;
+;  LED[6]       ; system_clock ; 5.337 ; 5.587 ; Rise       ; system_clock    ;
+;  LED[7]       ; system_clock ; 5.267 ; 5.523 ; Rise       ; system_clock    ;
+; disp_hex0[*]  ; system_clock ; 4.706 ; 4.986 ; Rise       ; system_clock    ;
+;  disp_hex0[2] ; system_clock ; 4.306 ; 4.419 ; Rise       ; system_clock    ;
+;  disp_hex0[3] ; system_clock ; 4.672 ; 4.922 ; Rise       ; system_clock    ;
+;  disp_hex0[4] ; system_clock ; 4.239 ; 4.336 ; Rise       ; system_clock    ;
+;  disp_hex0[6] ; system_clock ; 4.706 ; 4.986 ; Rise       ; system_clock    ;
+; disp_hex1[*]  ; system_clock ; 4.473 ; 4.682 ; Rise       ; system_clock    ;
+;  disp_hex1[2] ; system_clock ; 4.329 ; 4.449 ; Rise       ; system_clock    ;
+;  disp_hex1[3] ; system_clock ; 4.285 ; 4.382 ; Rise       ; system_clock    ;
+;  disp_hex1[4] ; system_clock ; 4.299 ; 4.383 ; Rise       ; system_clock    ;
+;  disp_hex1[6] ; system_clock ; 4.473 ; 4.682 ; Rise       ; system_clock    ;
+; disp_hex2[*]  ; system_clock ; 5.049 ; 5.468 ; Rise       ; system_clock    ;
+;  disp_hex2[2] ; system_clock ; 4.730 ; 5.040 ; Rise       ; system_clock    ;
+;  disp_hex2[3] ; system_clock ; 4.293 ; 4.403 ; Rise       ; system_clock    ;
+;  disp_hex2[4] ; system_clock ; 4.594 ; 4.817 ; Rise       ; system_clock    ;
+;  disp_hex2[6] ; system_clock ; 5.049 ; 5.468 ; Rise       ; system_clock    ;
+; disp_hex3[*]  ; system_clock ; 4.647 ; 4.978 ; Rise       ; system_clock    ;
+;  disp_hex3[2] ; system_clock ; 4.630 ; 4.978 ; Rise       ; system_clock    ;
+;  disp_hex3[3] ; system_clock ; 4.647 ; 4.929 ; Rise       ; system_clock    ;
+;  disp_hex3[4] ; system_clock ; 4.522 ; 4.766 ; Rise       ; system_clock    ;
+;  disp_hex3[6] ; system_clock ; 4.292 ; 4.488 ; Rise       ; system_clock    ;
+; disp_hex4[*]  ; system_clock ; 4.540 ; 4.814 ; Rise       ; system_clock    ;
+;  disp_hex4[2] ; system_clock ; 4.108 ; 4.170 ; Rise       ; system_clock    ;
+;  disp_hex4[3] ; system_clock ; 4.358 ; 4.561 ; Rise       ; system_clock    ;
+;  disp_hex4[4] ; system_clock ; 4.450 ; 4.677 ; Rise       ; system_clock    ;
+;  disp_hex4[6] ; system_clock ; 4.540 ; 4.814 ; Rise       ; system_clock    ;
+; disp_hex5[*]  ; system_clock ; 4.693 ; 4.995 ; Rise       ; system_clock    ;
+;  disp_hex5[2] ; system_clock ; 4.392 ; 4.564 ; Rise       ; system_clock    ;
+;  disp_hex5[3] ; system_clock ; 4.389 ; 4.579 ; Rise       ; system_clock    ;
+;  disp_hex5[4] ; system_clock ; 4.439 ; 4.622 ; Rise       ; system_clock    ;
+;  disp_hex5[6] ; system_clock ; 4.693 ; 4.995 ; Rise       ; system_clock    ;
 +---------------+--------------+-------+-------+------------+-----------------+
 
 
@@ -711,47 +738,51 @@ No paths to report.
 +---------------+--------------+-------+-------+------------+-----------------+
 ; Data Port     ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +---------------+--------------+-------+-------+------------+-----------------+
-; LED[*]        ; system_clock ; 4.173 ; 4.269 ; Rise       ; system_clock    ;
-;  LED[4]       ; system_clock ; 4.176 ; 4.430 ; Rise       ; system_clock    ;
-;  LED[5]       ; system_clock ; 4.272 ; 4.414 ; Rise       ; system_clock    ;
-;  LED[6]       ; system_clock ; 4.173 ; 4.269 ; Rise       ; system_clock    ;
-;  LED[7]       ; system_clock ; 4.214 ; 4.385 ; Rise       ; system_clock    ;
-; disp_hex0[*]  ; system_clock ; 3.928 ; 3.979 ; Rise       ; system_clock    ;
-;  disp_hex0[2] ; system_clock ; 3.963 ; 4.063 ; Rise       ; system_clock    ;
-;  disp_hex0[3] ; system_clock ; 4.287 ; 4.493 ; Rise       ; system_clock    ;
-;  disp_hex0[4] ; system_clock ; 3.928 ; 3.979 ; Rise       ; system_clock    ;
-;  disp_hex0[6] ; system_clock ; 4.269 ; 4.493 ; Rise       ; system_clock    ;
-; disp_hex1[*]  ; system_clock ; 4.009 ; 4.117 ; Rise       ; system_clock    ;
-;  disp_hex1[2] ; system_clock ; 4.116 ; 4.283 ; Rise       ; system_clock    ;
-;  disp_hex1[3] ; system_clock ; 4.085 ; 4.224 ; Rise       ; system_clock    ;
-;  disp_hex1[4] ; system_clock ; 4.025 ; 4.131 ; Rise       ; system_clock    ;
-;  disp_hex1[6] ; system_clock ; 4.009 ; 4.117 ; Rise       ; system_clock    ;
-; disp_hex2[*]  ; system_clock ; 4.115 ; 4.242 ; Rise       ; system_clock    ;
-;  disp_hex2[2] ; system_clock ; 4.362 ; 4.612 ; Rise       ; system_clock    ;
-;  disp_hex2[3] ; system_clock ; 4.263 ; 4.493 ; Rise       ; system_clock    ;
-;  disp_hex2[4] ; system_clock ; 4.464 ; 4.763 ; Rise       ; system_clock    ;
-;  disp_hex2[6] ; system_clock ; 4.115 ; 4.242 ; Rise       ; system_clock    ;
-; disp_hex3[*]  ; system_clock ; 3.833 ; 3.954 ; Rise       ; system_clock    ;
-;  disp_hex3[2] ; system_clock ; 4.105 ; 4.317 ; Rise       ; system_clock    ;
-;  disp_hex3[3] ; system_clock ; 4.113 ; 4.298 ; Rise       ; system_clock    ;
-;  disp_hex3[4] ; system_clock ; 4.225 ; 4.433 ; Rise       ; system_clock    ;
-;  disp_hex3[6] ; system_clock ; 3.833 ; 3.954 ; Rise       ; system_clock    ;
-; disp_hex4[*]  ; system_clock ; 3.795 ; 3.850 ; Rise       ; system_clock    ;
-;  disp_hex4[2] ; system_clock ; 3.795 ; 3.850 ; Rise       ; system_clock    ;
-;  disp_hex4[3] ; system_clock ; 4.115 ; 4.306 ; Rise       ; system_clock    ;
-;  disp_hex4[4] ; system_clock ; 3.981 ; 4.130 ; Rise       ; system_clock    ;
-;  disp_hex4[6] ; system_clock ; 4.042 ; 4.224 ; Rise       ; system_clock    ;
-; disp_hex5[*]  ; system_clock ; 3.932 ; 4.049 ; Rise       ; system_clock    ;
-;  disp_hex5[2] ; system_clock ; 4.238 ; 4.458 ; Rise       ; system_clock    ;
-;  disp_hex5[3] ; system_clock ; 4.160 ; 4.359 ; Rise       ; system_clock    ;
-;  disp_hex5[4] ; system_clock ; 3.932 ; 4.049 ; Rise       ; system_clock    ;
-;  disp_hex5[6] ; system_clock ; 4.004 ; 4.127 ; Rise       ; system_clock    ;
+; LED[*]        ; system_clock ; 3.970 ; 4.166 ; Rise       ; system_clock    ;
+;  LED[0]       ; system_clock ; 4.139 ; 4.380 ; Rise       ; system_clock    ;
+;  LED[1]       ; system_clock ; 4.141 ; 4.270 ; Rise       ; system_clock    ;
+;  LED[2]       ; system_clock ; 3.970 ; 4.166 ; Rise       ; system_clock    ;
+;  LED[3]       ; system_clock ; 4.477 ; 4.645 ; Rise       ; system_clock    ;
+;  LED[4]       ; system_clock ; 4.183 ; 4.424 ; Rise       ; system_clock    ;
+;  LED[5]       ; system_clock ; 4.179 ; 4.330 ; Rise       ; system_clock    ;
+;  LED[6]       ; system_clock ; 4.381 ; 4.572 ; Rise       ; system_clock    ;
+;  LED[7]       ; system_clock ; 4.322 ; 4.538 ; Rise       ; system_clock    ;
+; disp_hex0[*]  ; system_clock ; 3.926 ; 4.019 ; Rise       ; system_clock    ;
+;  disp_hex0[2] ; system_clock ; 3.983 ; 4.083 ; Rise       ; system_clock    ;
+;  disp_hex0[3] ; system_clock ; 4.325 ; 4.554 ; Rise       ; system_clock    ;
+;  disp_hex0[4] ; system_clock ; 3.926 ; 4.019 ; Rise       ; system_clock    ;
+;  disp_hex0[6] ; system_clock ; 4.355 ; 4.611 ; Rise       ; system_clock    ;
+; disp_hex1[*]  ; system_clock ; 3.962 ; 4.049 ; Rise       ; system_clock    ;
+;  disp_hex1[2] ; system_clock ; 3.999 ; 4.101 ; Rise       ; system_clock    ;
+;  disp_hex1[3] ; system_clock ; 3.962 ; 4.049 ; Rise       ; system_clock    ;
+;  disp_hex1[4] ; system_clock ; 3.973 ; 4.053 ; Rise       ; system_clock    ;
+;  disp_hex1[6] ; system_clock ; 4.125 ; 4.312 ; Rise       ; system_clock    ;
+; disp_hex2[*]  ; system_clock ; 3.968 ; 4.067 ; Rise       ; system_clock    ;
+;  disp_hex2[2] ; system_clock ; 4.374 ; 4.657 ; Rise       ; system_clock    ;
+;  disp_hex2[3] ; system_clock ; 3.968 ; 4.067 ; Rise       ; system_clock    ;
+;  disp_hex2[4] ; system_clock ; 4.248 ; 4.441 ; Rise       ; system_clock    ;
+;  disp_hex2[6] ; system_clock ; 4.668 ; 5.042 ; Rise       ; system_clock    ;
+; disp_hex3[*]  ; system_clock ; 3.956 ; 4.137 ; Rise       ; system_clock    ;
+;  disp_hex3[2] ; system_clock ; 4.254 ; 4.563 ; Rise       ; system_clock    ;
+;  disp_hex3[3] ; system_clock ; 4.294 ; 4.552 ; Rise       ; system_clock    ;
+;  disp_hex3[4] ; system_clock ; 4.166 ; 4.383 ; Rise       ; system_clock    ;
+;  disp_hex3[6] ; system_clock ; 3.956 ; 4.137 ; Rise       ; system_clock    ;
+; disp_hex4[*]  ; system_clock ; 3.795 ; 3.853 ; Rise       ; system_clock    ;
+;  disp_hex4[2] ; system_clock ; 3.795 ; 3.853 ; Rise       ; system_clock    ;
+;  disp_hex4[3] ; system_clock ; 4.012 ; 4.195 ; Rise       ; system_clock    ;
+;  disp_hex4[4] ; system_clock ; 4.092 ; 4.281 ; Rise       ; system_clock    ;
+;  disp_hex4[6] ; system_clock ; 4.188 ; 4.437 ; Rise       ; system_clock    ;
+; disp_hex5[*]  ; system_clock ; 4.050 ; 4.189 ; Rise       ; system_clock    ;
+;  disp_hex5[2] ; system_clock ; 4.050 ; 4.189 ; Rise       ; system_clock    ;
+;  disp_hex5[3] ; system_clock ; 4.050 ; 4.216 ; Rise       ; system_clock    ;
+;  disp_hex5[4] ; system_clock ; 4.103 ; 4.265 ; Rise       ; system_clock    ;
+;  disp_hex5[6] ; system_clock ; 4.304 ; 4.547 ; Rise       ; system_clock    ;
 +---------------+--------------+-------+-------+------------+-----------------+
 
 
----------------------------------------------
-; Fast 1100mV 0C Model Metastability Report ;
----------------------------------------------
+----------------------------------------------
+; Fast 1100mV 0C Model Metastability Summary ;
+----------------------------------------------
 No synchronizer chains to report.
 
 
@@ -760,10 +791,10 @@ No synchronizer chains to report.
 +------------------+----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -6.147   ; 0.171 ; N/A      ; N/A     ; -0.394              ;
-;  system_clock    ; -6.147   ; 0.171 ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS  ; -395.085 ; 0.0   ; 0.0      ; 0.0     ; -47.107             ;
-;  system_clock    ; -395.085 ; 0.000 ; N/A      ; N/A     ; -47.107             ;
+; Worst-case Slack ; -6.521   ; 0.233 ; N/A      ; N/A     ; -0.394              ;
+;  system_clock    ; -6.521   ; 0.233 ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS  ; -595.046 ; 0.0   ; 0.0      ; 0.0     ; -64.014             ;
+;  system_clock    ; -595.046 ; 0.000 ; N/A      ; N/A     ; -64.014             ;
 +------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -772,17 +803,17 @@ No synchronizer chains to report.
 +--------------+--------------+-------+-------+------------+-----------------+
 ; Data Port    ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +--------------+--------------+-------+-------+------------+-----------------+
-; dir_switch_2 ; system_clock ; 1.106 ; 1.481 ; Rise       ; system_clock    ;
+; dir_switch_2 ; system_clock ; 0.979 ; 1.204 ; Rise       ; system_clock    ;
 +--------------+--------------+-------+-------+------------+-----------------+
 
 
-+-----------------------------------------------------------------------------+
-; Hold Times                                                                  ;
-+--------------+--------------+-------+--------+------------+-----------------+
-; Data Port    ; Clock Port   ; Rise  ; Fall   ; Clock Edge ; Clock Reference ;
-+--------------+--------------+-------+--------+------------+-----------------+
-; dir_switch_2 ; system_clock ; 0.158 ; -0.143 ; Rise       ; system_clock    ;
-+--------------+--------------+-------+--------+------------+-----------------+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++--------------+--------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+--------------+-------+-------+------------+-----------------+
+; dir_switch_2 ; system_clock ; 0.248 ; 0.008 ; Rise       ; system_clock    ;
++--------------+--------------+-------+-------+------------+-----------------+
 
 
 +-----------------------------------------------------------------------------+
@@ -790,41 +821,45 @@ No synchronizer chains to report.
 +---------------+--------------+-------+-------+------------+-----------------+
 ; Data Port     ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +---------------+--------------+-------+-------+------------+-----------------+
-; LED[*]        ; system_clock ; 9.345 ; 9.421 ; Rise       ; system_clock    ;
-;  LED[4]       ; system_clock ; 8.127 ; 8.371 ; Rise       ; system_clock    ;
-;  LED[5]       ; system_clock ; 9.345 ; 9.421 ; Rise       ; system_clock    ;
-;  LED[6]       ; system_clock ; 9.090 ; 9.173 ; Rise       ; system_clock    ;
-;  LED[7]       ; system_clock ; 9.203 ; 9.376 ; Rise       ; system_clock    ;
-; disp_hex0[*]  ; system_clock ; 8.167 ; 8.442 ; Rise       ; system_clock    ;
-;  disp_hex0[2] ; system_clock ; 7.578 ; 7.700 ; Rise       ; system_clock    ;
-;  disp_hex0[3] ; system_clock ; 8.167 ; 8.442 ; Rise       ; system_clock    ;
-;  disp_hex0[4] ; system_clock ; 7.496 ; 7.523 ; Rise       ; system_clock    ;
-;  disp_hex0[6] ; system_clock ; 8.110 ; 8.440 ; Rise       ; system_clock    ;
-; disp_hex1[*]  ; system_clock ; 7.791 ; 8.009 ; Rise       ; system_clock    ;
-;  disp_hex1[2] ; system_clock ; 7.791 ; 8.009 ; Rise       ; system_clock    ;
-;  disp_hex1[3] ; system_clock ; 7.772 ; 7.938 ; Rise       ; system_clock    ;
-;  disp_hex1[4] ; system_clock ; 7.683 ; 7.795 ; Rise       ; system_clock    ;
-;  disp_hex1[6] ; system_clock ; 7.636 ; 7.758 ; Rise       ; system_clock    ;
-; disp_hex2[*]  ; system_clock ; 8.391 ; 8.829 ; Rise       ; system_clock    ;
-;  disp_hex2[2] ; system_clock ; 8.181 ; 8.535 ; Rise       ; system_clock    ;
-;  disp_hex2[3] ; system_clock ; 8.070 ; 8.391 ; Rise       ; system_clock    ;
-;  disp_hex2[4] ; system_clock ; 8.391 ; 8.829 ; Rise       ; system_clock    ;
-;  disp_hex2[6] ; system_clock ; 7.944 ; 8.108 ; Rise       ; system_clock    ;
-; disp_hex3[*]  ; system_clock ; 8.038 ; 8.319 ; Rise       ; system_clock    ;
-;  disp_hex3[2] ; system_clock ; 7.784 ; 8.022 ; Rise       ; system_clock    ;
-;  disp_hex3[3] ; system_clock ; 7.779 ; 8.015 ; Rise       ; system_clock    ;
-;  disp_hex3[4] ; system_clock ; 8.038 ; 8.319 ; Rise       ; system_clock    ;
-;  disp_hex3[6] ; system_clock ; 7.354 ; 7.443 ; Rise       ; system_clock    ;
-; disp_hex4[*]  ; system_clock ; 7.913 ; 8.187 ; Rise       ; system_clock    ;
-;  disp_hex4[2] ; system_clock ; 7.287 ; 7.305 ; Rise       ; system_clock    ;
-;  disp_hex4[3] ; system_clock ; 7.913 ; 8.187 ; Rise       ; system_clock    ;
-;  disp_hex4[4] ; system_clock ; 7.654 ; 7.816 ; Rise       ; system_clock    ;
-;  disp_hex4[6] ; system_clock ; 7.755 ; 7.943 ; Rise       ; system_clock    ;
-; disp_hex5[*]  ; system_clock ; 8.055 ; 8.357 ; Rise       ; system_clock    ;
-;  disp_hex5[2] ; system_clock ; 8.055 ; 8.357 ; Rise       ; system_clock    ;
-;  disp_hex5[3] ; system_clock ; 7.932 ; 8.199 ; Rise       ; system_clock    ;
-;  disp_hex5[4] ; system_clock ; 7.493 ; 7.631 ; Rise       ; system_clock    ;
-;  disp_hex5[6] ; system_clock ; 7.584 ; 7.741 ; Rise       ; system_clock    ;
+; LED[*]        ; system_clock ; 9.749 ; 9.881 ; Rise       ; system_clock    ;
+;  LED[0]       ; system_clock ; 8.018 ; 8.334 ; Rise       ; system_clock    ;
+;  LED[1]       ; system_clock ; 9.047 ; 9.143 ; Rise       ; system_clock    ;
+;  LED[2]       ; system_clock ; 7.670 ; 7.945 ; Rise       ; system_clock    ;
+;  LED[3]       ; system_clock ; 9.749 ; 9.881 ; Rise       ; system_clock    ;
+;  LED[4]       ; system_clock ; 8.143 ; 8.385 ; Rise       ; system_clock    ;
+;  LED[5]       ; system_clock ; 9.127 ; 9.276 ; Rise       ; system_clock    ;
+;  LED[6]       ; system_clock ; 9.514 ; 9.812 ; Rise       ; system_clock    ;
+;  LED[7]       ; system_clock ; 9.392 ; 9.669 ; Rise       ; system_clock    ;
+; disp_hex0[*]  ; system_clock ; 8.178 ; 8.547 ; Rise       ; system_clock    ;
+;  disp_hex0[2] ; system_clock ; 7.605 ; 7.715 ; Rise       ; system_clock    ;
+;  disp_hex0[3] ; system_clock ; 8.136 ; 8.454 ; Rise       ; system_clock    ;
+;  disp_hex0[4] ; system_clock ; 7.479 ; 7.579 ; Rise       ; system_clock    ;
+;  disp_hex0[6] ; system_clock ; 8.178 ; 8.547 ; Rise       ; system_clock    ;
+; disp_hex1[*]  ; system_clock ; 7.854 ; 8.108 ; Rise       ; system_clock    ;
+;  disp_hex1[2] ; system_clock ; 7.627 ; 7.743 ; Rise       ; system_clock    ;
+;  disp_hex1[3] ; system_clock ; 7.552 ; 7.630 ; Rise       ; system_clock    ;
+;  disp_hex1[4] ; system_clock ; 7.597 ; 7.654 ; Rise       ; system_clock    ;
+;  disp_hex1[6] ; system_clock ; 7.854 ; 8.108 ; Rise       ; system_clock    ;
+; disp_hex2[*]  ; system_clock ; 8.763 ; 9.329 ; Rise       ; system_clock    ;
+;  disp_hex2[2] ; system_clock ; 8.256 ; 8.663 ; Rise       ; system_clock    ;
+;  disp_hex2[3] ; system_clock ; 7.594 ; 7.695 ; Rise       ; system_clock    ;
+;  disp_hex2[4] ; system_clock ; 8.075 ; 8.332 ; Rise       ; system_clock    ;
+;  disp_hex2[6] ; system_clock ; 8.763 ; 9.329 ; Rise       ; system_clock    ;
+; disp_hex3[*]  ; system_clock ; 8.131 ; 8.530 ; Rise       ; system_clock    ;
+;  disp_hex3[2] ; system_clock ; 8.131 ; 8.530 ; Rise       ; system_clock    ;
+;  disp_hex3[3] ; system_clock ; 8.082 ; 8.441 ; Rise       ; system_clock    ;
+;  disp_hex3[4] ; system_clock ; 7.948 ; 8.252 ; Rise       ; system_clock    ;
+;  disp_hex3[6] ; system_clock ; 7.571 ; 7.762 ; Rise       ; system_clock    ;
+; disp_hex4[*]  ; system_clock ; 8.008 ; 8.292 ; Rise       ; system_clock    ;
+;  disp_hex4[2] ; system_clock ; 7.292 ; 7.310 ; Rise       ; system_clock    ;
+;  disp_hex4[3] ; system_clock ; 7.698 ; 7.924 ; Rise       ; system_clock    ;
+;  disp_hex4[4] ; system_clock ; 7.861 ; 8.123 ; Rise       ; system_clock    ;
+;  disp_hex4[6] ; system_clock ; 8.008 ; 8.292 ; Rise       ; system_clock    ;
+; disp_hex5[*]  ; system_clock ; 8.223 ; 8.608 ; Rise       ; system_clock    ;
+;  disp_hex5[2] ; system_clock ; 7.877 ; 8.032 ; Rise       ; system_clock    ;
+;  disp_hex5[3] ; system_clock ; 7.819 ; 8.022 ; Rise       ; system_clock    ;
+;  disp_hex5[4] ; system_clock ; 7.812 ; 8.019 ; Rise       ; system_clock    ;
+;  disp_hex5[6] ; system_clock ; 8.223 ; 8.608 ; Rise       ; system_clock    ;
 +---------------+--------------+-------+-------+------------+-----------------+
 
 
@@ -833,41 +868,45 @@ No synchronizer chains to report.
 +---------------+--------------+-------+-------+------------+-----------------+
 ; Data Port     ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +---------------+--------------+-------+-------+------------+-----------------+
-; LED[*]        ; system_clock ; 4.173 ; 4.269 ; Rise       ; system_clock    ;
-;  LED[4]       ; system_clock ; 4.176 ; 4.430 ; Rise       ; system_clock    ;
-;  LED[5]       ; system_clock ; 4.272 ; 4.414 ; Rise       ; system_clock    ;
-;  LED[6]       ; system_clock ; 4.173 ; 4.269 ; Rise       ; system_clock    ;
-;  LED[7]       ; system_clock ; 4.214 ; 4.385 ; Rise       ; system_clock    ;
-; disp_hex0[*]  ; system_clock ; 3.928 ; 3.979 ; Rise       ; system_clock    ;
-;  disp_hex0[2] ; system_clock ; 3.963 ; 4.063 ; Rise       ; system_clock    ;
-;  disp_hex0[3] ; system_clock ; 4.287 ; 4.493 ; Rise       ; system_clock    ;
-;  disp_hex0[4] ; system_clock ; 3.928 ; 3.979 ; Rise       ; system_clock    ;
-;  disp_hex0[6] ; system_clock ; 4.269 ; 4.493 ; Rise       ; system_clock    ;
-; disp_hex1[*]  ; system_clock ; 4.009 ; 4.117 ; Rise       ; system_clock    ;
-;  disp_hex1[2] ; system_clock ; 4.116 ; 4.283 ; Rise       ; system_clock    ;
-;  disp_hex1[3] ; system_clock ; 4.085 ; 4.224 ; Rise       ; system_clock    ;
-;  disp_hex1[4] ; system_clock ; 4.025 ; 4.131 ; Rise       ; system_clock    ;
-;  disp_hex1[6] ; system_clock ; 4.009 ; 4.117 ; Rise       ; system_clock    ;
-; disp_hex2[*]  ; system_clock ; 4.115 ; 4.242 ; Rise       ; system_clock    ;
-;  disp_hex2[2] ; system_clock ; 4.362 ; 4.612 ; Rise       ; system_clock    ;
-;  disp_hex2[3] ; system_clock ; 4.263 ; 4.493 ; Rise       ; system_clock    ;
-;  disp_hex2[4] ; system_clock ; 4.464 ; 4.763 ; Rise       ; system_clock    ;
-;  disp_hex2[6] ; system_clock ; 4.115 ; 4.242 ; Rise       ; system_clock    ;
-; disp_hex3[*]  ; system_clock ; 3.833 ; 3.954 ; Rise       ; system_clock    ;
-;  disp_hex3[2] ; system_clock ; 4.105 ; 4.317 ; Rise       ; system_clock    ;
-;  disp_hex3[3] ; system_clock ; 4.113 ; 4.298 ; Rise       ; system_clock    ;
-;  disp_hex3[4] ; system_clock ; 4.225 ; 4.433 ; Rise       ; system_clock    ;
-;  disp_hex3[6] ; system_clock ; 3.833 ; 3.954 ; Rise       ; system_clock    ;
-; disp_hex4[*]  ; system_clock ; 3.795 ; 3.850 ; Rise       ; system_clock    ;
-;  disp_hex4[2] ; system_clock ; 3.795 ; 3.850 ; Rise       ; system_clock    ;
-;  disp_hex4[3] ; system_clock ; 4.115 ; 4.306 ; Rise       ; system_clock    ;
-;  disp_hex4[4] ; system_clock ; 3.981 ; 4.130 ; Rise       ; system_clock    ;
-;  disp_hex4[6] ; system_clock ; 4.042 ; 4.224 ; Rise       ; system_clock    ;
-; disp_hex5[*]  ; system_clock ; 3.932 ; 4.049 ; Rise       ; system_clock    ;
-;  disp_hex5[2] ; system_clock ; 4.238 ; 4.458 ; Rise       ; system_clock    ;
-;  disp_hex5[3] ; system_clock ; 4.160 ; 4.359 ; Rise       ; system_clock    ;
-;  disp_hex5[4] ; system_clock ; 3.932 ; 4.049 ; Rise       ; system_clock    ;
-;  disp_hex5[6] ; system_clock ; 4.004 ; 4.127 ; Rise       ; system_clock    ;
+; LED[*]        ; system_clock ; 3.970 ; 4.166 ; Rise       ; system_clock    ;
+;  LED[0]       ; system_clock ; 4.139 ; 4.380 ; Rise       ; system_clock    ;
+;  LED[1]       ; system_clock ; 4.141 ; 4.270 ; Rise       ; system_clock    ;
+;  LED[2]       ; system_clock ; 3.970 ; 4.166 ; Rise       ; system_clock    ;
+;  LED[3]       ; system_clock ; 4.477 ; 4.645 ; Rise       ; system_clock    ;
+;  LED[4]       ; system_clock ; 4.183 ; 4.424 ; Rise       ; system_clock    ;
+;  LED[5]       ; system_clock ; 4.179 ; 4.330 ; Rise       ; system_clock    ;
+;  LED[6]       ; system_clock ; 4.381 ; 4.572 ; Rise       ; system_clock    ;
+;  LED[7]       ; system_clock ; 4.322 ; 4.538 ; Rise       ; system_clock    ;
+; disp_hex0[*]  ; system_clock ; 3.926 ; 4.019 ; Rise       ; system_clock    ;
+;  disp_hex0[2] ; system_clock ; 3.983 ; 4.083 ; Rise       ; system_clock    ;
+;  disp_hex0[3] ; system_clock ; 4.325 ; 4.554 ; Rise       ; system_clock    ;
+;  disp_hex0[4] ; system_clock ; 3.926 ; 4.019 ; Rise       ; system_clock    ;
+;  disp_hex0[6] ; system_clock ; 4.355 ; 4.611 ; Rise       ; system_clock    ;
+; disp_hex1[*]  ; system_clock ; 3.962 ; 4.049 ; Rise       ; system_clock    ;
+;  disp_hex1[2] ; system_clock ; 3.999 ; 4.101 ; Rise       ; system_clock    ;
+;  disp_hex1[3] ; system_clock ; 3.962 ; 4.049 ; Rise       ; system_clock    ;
+;  disp_hex1[4] ; system_clock ; 3.973 ; 4.053 ; Rise       ; system_clock    ;
+;  disp_hex1[6] ; system_clock ; 4.125 ; 4.312 ; Rise       ; system_clock    ;
+; disp_hex2[*]  ; system_clock ; 3.968 ; 4.067 ; Rise       ; system_clock    ;
+;  disp_hex2[2] ; system_clock ; 4.374 ; 4.657 ; Rise       ; system_clock    ;
+;  disp_hex2[3] ; system_clock ; 3.968 ; 4.067 ; Rise       ; system_clock    ;
+;  disp_hex2[4] ; system_clock ; 4.248 ; 4.441 ; Rise       ; system_clock    ;
+;  disp_hex2[6] ; system_clock ; 4.668 ; 5.042 ; Rise       ; system_clock    ;
+; disp_hex3[*]  ; system_clock ; 3.956 ; 4.137 ; Rise       ; system_clock    ;
+;  disp_hex3[2] ; system_clock ; 4.254 ; 4.563 ; Rise       ; system_clock    ;
+;  disp_hex3[3] ; system_clock ; 4.294 ; 4.552 ; Rise       ; system_clock    ;
+;  disp_hex3[4] ; system_clock ; 4.166 ; 4.383 ; Rise       ; system_clock    ;
+;  disp_hex3[6] ; system_clock ; 3.956 ; 4.137 ; Rise       ; system_clock    ;
+; disp_hex4[*]  ; system_clock ; 3.795 ; 3.853 ; Rise       ; system_clock    ;
+;  disp_hex4[2] ; system_clock ; 3.795 ; 3.853 ; Rise       ; system_clock    ;
+;  disp_hex4[3] ; system_clock ; 4.012 ; 4.195 ; Rise       ; system_clock    ;
+;  disp_hex4[4] ; system_clock ; 4.092 ; 4.281 ; Rise       ; system_clock    ;
+;  disp_hex4[6] ; system_clock ; 4.188 ; 4.437 ; Rise       ; system_clock    ;
+; disp_hex5[*]  ; system_clock ; 4.050 ; 4.189 ; Rise       ; system_clock    ;
+;  disp_hex5[2] ; system_clock ; 4.050 ; 4.189 ; Rise       ; system_clock    ;
+;  disp_hex5[3] ; system_clock ; 4.050 ; 4.216 ; Rise       ; system_clock    ;
+;  disp_hex5[4] ; system_clock ; 4.103 ; 4.265 ; Rise       ; system_clock    ;
+;  disp_hex5[6] ; system_clock ; 4.304 ; 4.547 ; Rise       ; system_clock    ;
 +---------------+--------------+-------+-------+------------+-----------------+
 
 
@@ -1189,7 +1228,7 @@ No synchronizer chains to report.
 +--------------+--------------+----------+----------+----------+----------+
 ; From Clock   ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------+--------------+----------+----------+----------+----------+
-; system_clock ; system_clock ; 351425   ; 0        ; 0        ; 0        ;
+; system_clock ; system_clock ; 420198   ; 0        ; 0        ; 0        ;
 +--------------+--------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1199,7 +1238,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------+--------------+----------+----------+----------+----------+
 ; From Clock   ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------+--------------+----------+----------+----------+----------+
-; system_clock ; system_clock ; 351425   ; 0        ; 0        ; 0        ;
+; system_clock ; system_clock ; 420198   ; 0        ; 0        ; 0        ;
 +--------------+--------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1225,8 +1264,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
 ; Unconstrained Input Port Paths  ; 1     ; 1    ;
-; Unconstrained Output Ports      ; 28    ; 28   ;
-; Unconstrained Output Port Paths ; 28    ; 28   ;
+; Unconstrained Output Ports      ; 32    ; 32   ;
+; Unconstrained Output Port Paths ; 32    ; 32   ;
 +---------------------------------+-------+------+
 
 
@@ -1235,11 +1274,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
-    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Fri Jun 05 22:54:39 2015
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Full Version
+    Info: Processing started: Mon Jun 08 22:22:39 2015
 Info: Command: quartus_sta PR_test -c PR_test
-Info: qsta_default_script.tcl version: #3
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info: qsta_default_script.tcl version: #11
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'PR_test.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -1252,84 +1291,84 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.125
+Info (332146): Worst-case setup slack is -6.521
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.125            -395.085 system_clock 
-Info (332146): Worst-case hold slack is 0.313
+    Info (332119):    -6.521            -595.046 system_clock 
+Info (332146): Worst-case hold slack is 0.453
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.313               0.000 system_clock 
+    Info (332119):     0.453               0.000 system_clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -43.836 system_clock 
+    Info (332119):    -0.394             -59.421 system_clock 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.147
+Info (332146): Worst-case setup slack is -6.520
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.147            -392.664 system_clock 
-Info (332146): Worst-case hold slack is 0.292
+    Info (332119):    -6.520            -591.128 system_clock 
+Info (332146): Worst-case hold slack is 0.462
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.292               0.000 system_clock 
+    Info (332119):     0.462               0.000 system_clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -47.107 system_clock 
+    Info (332119):    -0.394             -64.014 system_clock 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.988
+Info (332146): Worst-case setup slack is -3.228
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.988            -184.859 system_clock 
-Info (332146): Worst-case hold slack is 0.186
+    Info (332119):    -3.228            -284.786 system_clock 
+Info (332146): Worst-case hold slack is 0.241
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.186               0.000 system_clock 
+    Info (332119):     0.241               0.000 system_clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -0.091
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.091              -7.404 system_clock 
+    Info (332119):    -0.091              -9.995 system_clock 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.683
+Info (332146): Worst-case setup slack is -2.910
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.683            -163.725 system_clock 
-Info (332146): Worst-case hold slack is 0.171
+    Info (332119):    -2.910            -253.658 system_clock 
+Info (332146): Worst-case hold slack is 0.233
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.171               0.000 system_clock 
+    Info (332119):     0.233               0.000 system_clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.088
+Info (332146): Worst-case minimum pulse width slack is -0.089
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.088              -7.171 system_clock 
+    Info (332119):    -0.089              -9.763 system_clock 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 999 megabytes
-    Info: Processing ended: Fri Jun 05 22:54:50 2015
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 1065 megabytes
+    Info: Processing ended: Mon Jun 08 22:22:46 2015
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
 
 

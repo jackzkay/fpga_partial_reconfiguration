@@ -22,7 +22,7 @@ entity PR_test_top is
 			PR_error_led		: out STD_LOGIC;			
 			LED					: out STD_LOGIC_VECTOR (7 downto 0);
 			
-			disp_hex0			: out STD_LOGIC_VECTOR (6 downto 0);
+			disp_hex0			: out STD_LOGIC_VECTOR (6 downto 0); -- 7-bit decoded output 7-Segment display
 			disp_hex1			: out STD_LOGIC_VECTOR (6 downto 0);
 			disp_hex2			: out STD_LOGIC_VECTOR (6 downto 0);
 			disp_hex3			: out STD_LOGIC_VECTOR (6 downto 0);
@@ -34,10 +34,12 @@ end PR_test_top;
 
 architecture behv of PR_test_top is
     component freeze_region
-		 port( clk:in STD_LOGIC;
-			dir:in STD_LOGIC;		 
-			freeze:in STD_LOGIC;
-			leds: out STD_LOGIC_VECTOR (3 downto 0));
+		 port( clk			:in STD_LOGIC;
+			dir				:in STD_LOGIC;		 
+			freeze			:in STD_LOGIC;
+			leds				:out STD_LOGIC_VECTOR (3 downto 0);
+			second_leds		:out STD_LOGIC_VECTOR (3 downto 0)
+			);
     end component freeze_region;
 	 
 	component pr_user_host is
@@ -65,28 +67,32 @@ architecture behv of PR_test_top is
     end component ticker_disp;
 	
 	-- ****************** Missing ***********************
-	--	compontent for LED 3-0
+	--	component for LED 3-0
 	-- clk					: in STD_LOGIC;
 	--	LED					: out STD_LOGIC_VECTOR (3 downto 0));
 
 	
-	
-signal pr_freeze_reg 	: STD_LOGIC;
-signal pr_freeze 			: STD_LOGIC;
-signal channel 			: STD_LOGIC;
-signal done_w 				: STD_LOGIC;
-signal pr_freeze_reg1 	: STD_LOGIC;
-signal really_done 	 	: STD_LOGIC;
-signal error_flag_pr_w	: STD_LOGIC;
+--signal max_count:integer	:= 300000000; 		-- 08.06.2015 Ticker
+--signal count:integer 		:=0;					-- 08.06.2015 Ticker
+signal pr_freeze_reg 		: STD_LOGIC;
+signal pr_freeze 				: STD_LOGIC;
+signal channel 				: STD_LOGIC;
+signal done_w 					: STD_LOGIC;
+signal pr_freeze_reg1 		: STD_LOGIC;
+signal really_done 	 		: STD_LOGIC;
+signal error_flag_pr_w		: STD_LOGIC;
 	 
 begin 
-channel <= dir_switch_1; 
+channel <= dir_switch_1;
+ 
 freeze_region_inst: freeze_region
  port map (
    clk   	=> system_clock,
    freeze 	=> '0', --pr_freeze,	
    dir   	=> dir_switch_2, 
-   leds  	=> LED(7 downto 4));
+   leds  	=> LED(7 downto 4),
+	second_leds => LED(3 downto 0)
+	);
 
 pr_user_host_inst : pr_user_host	
 port map (
@@ -117,5 +123,6 @@ ticker_inst: ticker_disp
 		PR_error_led 		<= not error_flag_pr_w;
 	end if;	
 end process;
+
 		
 end behv;

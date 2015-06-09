@@ -10,7 +10,7 @@ end led_flash;
 
 architecture behv of led_flash is
 
-		constant max_count : natural := 55555555;
+	constant max_count : natural := 50000000;
 		 
  
 begin 
