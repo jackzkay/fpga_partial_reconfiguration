@@ -1,0 +1,17 @@
+Question
+**********************************
+1. Ist es wichtig, dass die LEDs mit dem Schalter ihr Muster ändern?
+-> Welchen Sinn hat das?
+
+2. Reicht es nicht erstmal aus, wenn wir jetzt den Ticker "run" über die sechs 7-Segment Anzeigen durchlaufen lassen (-> zeigt an, dass der FPGA in diesem Bereich nicht geändert wird, sondern weiter läuft.) und dann einfach nur ein LED Muster ändern?
+
+3. Wieso wird z.B. in dem LED-Wrapper eine "led_flash_inst" angelegt? Muss man das machen und welche genaue Funktion hat das?
+
+4. Müssen zwei "led_wrapper" unter der "freeze_region" sein? Wenn wir nur ein LED Muster ändern, würde einer reichen oder !?
+
+5. "pr_user_host" hab ich noch gar keinen Plan von. Muss mir am WE nochmal das Video genau angucken und die PDFs durcharbeiten.
+
+WAS IST AM SINNVOLLSTEN ALS NÄCHSTES ZU MACHEN?
+-------------------------------------
+Das sind nur mal grob meine Fragen zu dem Code. (Markus)
+
