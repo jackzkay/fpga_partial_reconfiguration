@@ -1,17 +1,20 @@
 Question
 **********************************
-1. Ist es wichtig, dass die LEDs mit dem Schalter ihr Muster �ndern?
+1. Ist es wichtig, dass die LEDs mit dem Schalter ihr Muster ändern?
 -> Welchen Sinn hat das?
+Antwort: Beweis dafür, dass freeze wrapper funktioniert. Während der rekonifugration dürfen keine Signale die in den umkonfigurierten block gehen sich ändern. Wenn man also den Schalter während der umkonfiguration betätigt und die Konfig trotzdem funktioniert hat ist der freezewrapper richtig geschrieben.
 
-2. Reicht es nicht erstmal aus, wenn wir jetzt den Ticker "run" �ber die sechs 7-Segment Anzeigen durchlaufen lassen (-> zeigt an, dass der FPGA in diesem Bereich nicht ge�ndert wird, sondern weiter l�uft.) und dann einfach nur ein LED Muster �ndern?
+2. Reicht es nicht erstmal aus, wenn wir jetzt den Ticker "run" über die sechs 7-Segment Anzeigen durchlaufen lassen (-> zeigt an, dass der FPGA in diesem Bereich nicht geändert wird, sondern weiter läuft.) und dann einfach nur ein LED Muster ändern?
 
 3. Wieso wird z.B. in dem LED-Wrapper eine "led_flash_inst" angelegt? Muss man das machen und welche genaue Funktion hat das?
+Antwort. LED_flash_inst ist das Modul dass das Blinken erzeugt. 
 
-4. M�ssen zwei "led_wrapper" unter der "freeze_region" sein? Wenn wir nur ein LED Muster �ndern, w�rde einer reichen oder !?
+4. Müssen zwei "led_wrapper" unter der "freeze_region" sein? Wenn wir nur ein LED Muster ändern, würde einer reichen oder !?
+Antwort: dazu müssen wir nochmal die Demo anschaun. Ich habe das bisher so verstanden: einmal kompilieren mit erster Konfig (größte). dann zweites mal konfigurieren mit zweiter konfiguration.
 
 5. "pr_user_host" hab ich noch gar keinen Plan von. Muss mir am WE nochmal das Video genau angucken und die PDFs durcharbeiten.
 
-WAS IST AM SINNVOLLSTEN ALS N�CHSTES ZU MACHEN?
+WAS IST AM SINNVOLLSTEN ALS NÄCHSTES ZU MACHEN?
 -------------------------------------
 Das sind nur mal grob meine Fragen zu dem Code. (Markus)
 
